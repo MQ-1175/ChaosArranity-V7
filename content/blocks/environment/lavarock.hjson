@@ -1,0 +1,16 @@
+type: Floor
+name: Lava Rock
+variants: 3
+emitLight: true
+lightRadius: 45
+lightColor: FFA500
+blendGroup: basalt
+solid: false
+placeableOn: true
+isLiquid: false
+status: burning
+statusDuration: 15
+attributes: {
+  heat: 1.0
+  water: -1.0
+}

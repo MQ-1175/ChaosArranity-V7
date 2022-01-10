@@ -1,0 +1,90 @@
+type: UnitFactory
+name: Sandbox Unit Constructor
+description: Produces adamantite units for free.
+buildVisibility: sandboxOnly
+health: 10000
+size: 3
+requirements: [ ]
+plans: [
+    {
+        unit: t1-reliavent
+        requirements: [ ]
+        time: 180
+    }
+    {
+        unit: t2-silo-array
+        requirements: [ ]
+        time: 180
+    }
+    {
+        unit: t3-decimation
+        requirements: [ ]
+        time: 180
+    }
+    {
+        unit: t4-carnage
+        requirements: [ ]
+        time: 180
+    }
+    {
+        unit: t5-destruction
+        requirements: [ ]
+        time: 180
+    }
+    {
+        unit: t1-melter
+        requirements: [ ]
+        time: 180
+    }
+    {
+        unit: t2-evasculator
+        requirements: [ ]
+        time: 180
+    }
+    {
+        unit: t3-blaster
+        requirements: [ ]
+        time: 180
+    }
+    {
+        unit: t4-catastrophere
+        requirements: [ ]
+        time: 180
+    }
+    {
+        unit: t5-death
+        requirements: [ ]
+        time: 180
+    }
+    {
+        unit: t1-paralysis
+        requirements: [ ]
+        time: 180
+    }
+    {
+        unit: t2-ravager
+        requirements: [ ]
+        time: 180
+    }
+    {
+        unit: t3-abolisher
+        requirements: [ ]
+        time: 180
+    }
+    {
+        unit: t4-warmonger
+        requirements: [ ]
+        time: 180
+    }
+    {
+        unit: t5-demise
+        requirements: [ ]
+        time: 180
+    }
+]
+
+
+category: units
+consumes: {
+    power: 1
+}

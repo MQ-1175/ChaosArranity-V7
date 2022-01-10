@@ -1,0 +1,35 @@
+type: AttributeSmelter
+name: Metaglass Crucible
+description: Smelts metaglass from sand and lead. More efficient in hot locations.
+liquidCapacity: 0
+itemCapacity: 30
+size: 3
+health: 360
+buildCostMultiplier: 1.04384133612
+attribute: heat
+maxHeatBoost: 2.23
+boostScale: 0.223
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 90
+updateEffect: smeltsmoke
+outputItem: metaglass/8
+consumes: {
+  power: 4
+  items: {
+    items: [
+     sand/7
+     lead/6
+    ]
+  }
+}
+requirements: [
+   titanium/130
+   plastanium/30
+   silicon/80
+   copper/90
+]
+category: crafting
+research: kiln
+

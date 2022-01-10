@@ -1,0 +1,34 @@
+type: Separator
+name: Scale Separator
+description: Splits scale into several materials, however this process requires immense amounts of power.
+liquidCapacity: 50
+size: 3
+health: 330
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 6
+results: [
+   thorium/1
+   lead/1
+   coal/1
+   sand/1
+   titanium/1
+]
+ consumes: {
+     power: 10
+      liquid: {
+       liquid: scale
+       amount: 0.1
+    }
+}
+requirements: [
+  lead/200
+  copper/200
+  graphite/200
+  titanium/200
+  silicon/200
+]
+category: crafting
+research: separator
+

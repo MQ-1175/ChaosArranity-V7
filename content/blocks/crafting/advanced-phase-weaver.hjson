@@ -1,0 +1,32 @@
+type: GenericCrafter
+name: Advanced Phase Weaver
+description: Uses a complicated process to create phase fabric without the need for sand, substituting it with a bit of water.
+liquidCapacity: 10
+itemCapacity: 30
+size: 2
+health: 440
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 60
+outputItem: phase-fabric/1
+ consumes: {
+     power: 10
+  items: {
+    items: [
+     thorium/3
+    ]
+  }
+      liquid: {
+       liquid: water
+       amount: 0.108333333333333
+    }
+}
+requirements: [
+  lead/300
+  titanium/200
+  graphite/200
+  thorium/300
+]
+category: crafting
+research: phase-weaver

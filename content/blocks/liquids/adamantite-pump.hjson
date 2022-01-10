@@ -1,0 +1,19 @@
+name: Adamantite Pump
+description: An adamantite based pump that pumps lots of liquid very quickly.
+type: Pump
+liquidCapacity: 280
+health: 1200
+size: 3
+researchCostMultiplier: 0.5
+pumpAmount: 0.518518518518518518
+consumes: {
+  power: 5.8333333333333
+}
+requirements: [
+  adamantite/20
+  surge-alloy/80
+  metaglass/200
+  thorium/200
+]
+category: liquid
+research: thermal-pump

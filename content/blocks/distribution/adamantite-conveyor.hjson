@@ -1,0 +1,20 @@
+type: StackConveyor
+name: Adamantite Conveyor
+description: A conveyor made out of adamantite. Very durable and fast, but also expensive. Transports items in batches like a plastanium conveyor.
+size: 1
+researchCostMultiplier: 0.5
+health: 1000
+speed: 0.25
+itemCapacity: 25
+outlineColor: c30d40
+canOverdrive: true
+buildCostMultiplier: 0.5
+requirements: [
+     adamantite/1
+     surge-alloy/1
+     phase-fabric/1
+     silicon/1
+]
+group: transportation
+category: distribution
+research: plastanium-conveyor

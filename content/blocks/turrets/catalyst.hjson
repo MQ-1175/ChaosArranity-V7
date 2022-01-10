@@ -1,0 +1,196 @@
+type: ItemTurret
+name: Catalyst
+description: A powerful high range sniper turret designed to take down adamantite units. Can fire most items for ammo.
+health: 4000
+size: 4
+researchCostMultiplier: 0.5
+reloadTime: 300
+range: 600
+targetAir: true
+targetGround: true
+recoilAmount: 2
+restitution: 0.1
+ammoUseEffect: casing1
+shootSound: catalyst
+shootShake: 6
+inaccuracy: 0
+rotateSpeed: 5
+coolantMultiplier: 0.90909090909
+coolantUsage: 1
+ammoTypes: {
+   copper: {
+    speed: 6
+    damage: 290
+    lifetime: 120
+    width: 10
+    height: 10
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+   }
+   lead: {
+    speed: 6
+    damage: 310
+    lifetime: 120
+    width: 10
+    height: 10
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+   }
+   metaglass: {
+    speed: 6
+    damage: 240
+    lifetime: 220
+    width: 10
+    height: 10
+    fragBullets: 12
+    fragBullet: fragGlassFrag
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+   }
+   graphite: {
+    speed: 6
+    damage: 370
+    lifetime: 120
+    width: 10
+    height: 10
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+   }
+   titanium: {
+    speed: 6
+    damage: 490
+    lifetime: 120
+    width: 10
+    height: 10
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+   }
+   thorium: {
+    speed: 6
+    damage: 640
+    lifetime: 120
+    width: 10
+    height: 10
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+   }
+   scrap: {
+    speed: 6
+    damage: 310
+    lifetime: 120
+    width: 10
+    height: 10
+    fragBullets: 10
+    fragBullet: fragPlasticFrag
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+   }
+   silicon: {
+    speed: 6
+    damage: 340
+    lifetime: 120
+    width: 10
+    height: 10
+    homingPower: 1
+    homingRange: 80
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+   }
+   plastanium: {
+    speed: 6
+    damage: 370
+    lifetime: 120
+    width: 10
+    height: 10
+    fragBullets: 12
+    fragBullet: fragPlasticFrag
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+   }
+   phase-fabric: {
+    speed: 6
+    damage: 430
+    lifetime: 120
+    width: 10
+    height: 10
+    collidesTeam: true
+    healPercent: 25
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+   }
+   blast-compound: {
+    speed: 6
+    damage: 390
+    lifetime: 120
+    width: 10
+    height: 10
+    status: burning
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    hitEffect: explosion
+    hitSound: boom
+   }
+   pyratite: {
+    speed: 6
+    damage: 370
+    lifetime: 120
+    width: 10
+    height: 10
+    status: burning
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    hitEffect: fire
+   }
+   adamantite: {
+    speed: 6
+    damage: 3000
+    lifetime: 120
+    pierce: true
+    width: 10
+    height: 10
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+   }
+   fireatite: {
+    speed: 6
+    damage: 550
+    lifetime: 120
+    width: 10
+    height: 10
+    status: burning
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    hitEffect: explosion
+    hitSound: boom
+   }
+ ice: {
+    speed: 6
+    reloadMultiplier: 1.0
+    damage: 200
+    lifetime: 120
+    width: 10
+    height: 10
+    shootEffect: shootSmall
+    fragBullets: 8
+    fragBullet: {
+        lifetime: 20
+        speed: 6
+        damage: 10
+        width: 5
+        height: 5
+        frontColor: b7cbf4
+        backColor: 9db5e5
+    }
+    smokeEffect: shootSmallSmoke
+   }
+}
+requirements: [
+  silicon/1000
+  graphite/1000
+  thorium/800
+  plastanium/600
+  surge-alloy/400
+  adamantite/300
+]
+category: turret
+research: foreshadow

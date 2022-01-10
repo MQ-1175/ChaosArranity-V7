@@ -1,0 +1,19 @@
+type: Floor
+name: Cryogenic Fluid
+solid: false
+variants: 1
+placeableOn: true
+targetable: false
+canOverdrive: false
+cacheLayer: water
+hasShadow: false
+destructible: false
+speedMultiplier: 0.4
+damageTaken: 0
+drownTime: 180
+status: freezing
+statusDuration: 120
+isLiquid: true
+liquidDrop: cryogenic-fluid
+liquidMultiplier: 0.5
+playerUnmineable: true

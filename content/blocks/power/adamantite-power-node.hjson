@@ -1,0 +1,17 @@
+type: PowerNode
+name: Adamantite Power Node
+description: A power node made out of adamantite with high range and many connections.
+size: 2
+researchCostMultiplier: 0.5
+health: 3000
+laserRange: 40
+maxNodes: 50
+requirements: [
+     adamantite/15
+     silicon/225
+     titanium/50
+     lead/50
+     surge-alloy/120
+]
+category: power
+research: surge-tower

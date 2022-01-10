@@ -1,0 +1,33 @@
+type: GenericSmelter
+name: Surge Press
+description: Mixes scrap with slag to make small amounts of surge.
+liquidCapacity: 200
+itemCapacity: 20
+health: 500
+size: 3
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 180
+updateEffect: smeltsmoke
+outputItem: surge-alloy/1
+consumes: {
+  power: 13.333333333333333333333
+  items: {
+    items: [
+     scrap/10
+    ]
+  }
+  liquid: {
+    liquid: slag
+    amount: 0.19166666666666666
+  }
+}
+requirements: [
+  titanium/200
+  metaglass/200
+  graphite/200
+  thorium/75
+]
+category: crafting
+research: alloy-smelter

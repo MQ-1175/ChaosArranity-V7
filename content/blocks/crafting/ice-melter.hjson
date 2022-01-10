@@ -1,0 +1,29 @@
+type: GenericSmelter
+name: Ice Melter
+description: Melts ice into water.
+liquidCapacity: 10
+size: 2
+health: 80
+hasPower: true
+hasLiquids: true
+hasItems:true
+craftTime: 15
+updateEffect: smeltsmoke
+consumes: {
+  power: 0.25
+items: {
+    items: [
+     ice/1
+  ]
+}
+}
+requirements: [
+   copper/70
+   lead/70
+   graphite/30
+   metaglass/10
+]
+category: crafting
+research: melter
+outputLiquid: water/1.5
+

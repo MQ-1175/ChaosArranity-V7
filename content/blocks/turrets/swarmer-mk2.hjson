@@ -1,0 +1,184 @@
+type: ItemTurret
+name: Swarmer MKII
+description: A heavily improved swarmer, with no size increase needed. Fires more rockets, with better homing abilities. Faster fire rate and longer range.
+health: 2800
+size: 2
+reloadTime: 60
+burstSpacing: 1
+range: 240
+shots: 20
+spread: 1
+xRand: 4
+alternate: true
+targetAir: true
+targetGround: true
+shootSound: missile
+inaccuracy: 10
+rotateSpeed: 5
+coolantMultiplier: 5
+ammoTypes: {
+   pyratite: {
+      type: MissileBulletType
+      sprite: chaos-arranity-mk2-missile
+      frontColor: FFAA5F
+      backColor: FFAA5F
+      trailColor: FFAA5F
+      hitEffect: blastExplosion
+      speed: 4
+      damage: 15
+      splashDamage: 4
+      splashDamageRadius: 24
+      homingPower: 0.1
+      homingRange: 64
+      status: burning
+      makeFire: true
+      shrinkY: 0
+      width: 10
+      height: 10
+      weaveScale: 0
+      weaveMag: -1
+      ammoMultiplier: 3
+   }
+   blast-compound: {
+      type: MissileBulletType
+      sprite: chaos-arranity-mk2-missile
+      frontColor: FF795E
+      backColor: FF795E
+      trailColor: FF795E
+      hitEffect: blastExplosion
+      despawnEffect: blastExplosion
+      speed: 4
+      damage: 20
+      splashDamage: 6
+      splashDamageRadius: 48
+      homingPower: 0.1
+      homingRange: 64
+      status: blasted
+      statusDuration: 60
+      shrinkY: 0
+      width: 10
+      height: 10
+      weaveScale: 0
+      weaveMag: -1
+      ammoMultiplier: 3
+   }
+   metaglass: {
+      type: MissileBulletType
+      sprite: chaos-arranity-mk2-missile
+      frontColor: EBEEF5
+      backColor: EBEEF5
+      trailColor: EBEEF5
+      hitEffect: blastExplosion
+      speed: 4
+      damage: 12
+      splashDamage: 3
+      splashDamageRadius: 24
+      homingPower: 0.1
+      homingRange: 64
+      fragBullets: 8
+      fragBullet: fragGlassFrag 
+      shrinkY: 0
+      width: 10
+      height: 10
+      weaveScale: 0
+      weaveMag: -1
+      ammoMultiplier: 3
+   }
+   plastanium: {
+      type: MissileBulletType
+      sprite: chaos-arranity-mk2-missile
+      frontColor: CBD97F
+      backColor: CBD97F
+      trailColor: CBD97F
+      hitEffect: blastExplosion
+      speed: 4
+      damage: 20
+      splashDamage: 4
+      splashDamageRadius: 24
+      homingPower: 0.1
+      homingRange: 64
+      fragBullets: 8
+      fragBullet: fragPlasticFrag 
+      shrinkY: 0
+      width: 10
+      height: 10
+      weaveScale: 0
+      weaveMag: -1
+      ammoMultiplier: 3
+   }
+   surge-alloy: {
+      type: MissileBulletType
+      sprite: chaos-arranity-mk2-missile
+      frontColor: F0F050
+      backColor: F0F050
+      trailColor: F0F050
+      hitEffect: blastExplosion
+      speed: 5
+      damage: 25
+      splashDamage: 6
+      splashDamageRadius: 24
+      homingPower: 0.1
+      homingRange: 64
+      lightning: 4
+      lightningDamage: 20
+      lightningLength: 10
+      shrinkY: 0
+      width: 10
+      height: 10
+      weaveScale: 0
+      weaveMag: -1
+      ammoMultiplier: 3
+   }
+   fireatite: {
+      type: MissileBulletType
+      sprite: chaos-arranity-mk2-missile
+      frontColor: FF795E
+      backColor: FF795E
+      trailColor: FF795E
+      hitEffect: massiveExplosion
+      despawnEffect: massiveExplosion
+      speed: 4
+      damage: 30
+      splashDamage: 8
+      splashDamageRadius: 64
+      homingPower: 0.1
+      homingRange: 64
+      status: burning
+      makeFire: true
+      shrinkY: 0
+      width: 10
+      height: 10
+      weaveScale: 0
+      weaveMag: -1
+      ammoMultiplier: 3
+   }
+   adamantite: {
+      type: MissileBulletType
+      sprite: chaos-arranity-mk2-missile
+      frontColor: 7A001E
+      backColor: 7A001E
+      trailColor: 7A001E
+      hitEffect: massiveExplosion
+      despawnEffect: blastExplosion
+      speed: 6
+      damage: 80
+      splashDamage: 6
+      splashDamageRadius: 64
+      homingPower: 0.2
+      homingRange: 80
+      shrinkY: 0
+      width: 10
+      height: 10
+      weaveScale: 0
+      weaveMag: -1
+      ammoMultiplier: 3
+   }
+}
+requirements: [
+   surge-alloy/225
+   silicon/330
+   plastanium/210
+   metaglass/400
+]
+category: turret
+research: swarmer

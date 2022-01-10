@@ -1,0 +1,36 @@
+type: Reconstructor
+name: Additive Adamantite Reconstructor
+description: Upgrades adamantite units to the second tier
+health: 4000
+size: 3
+researchCostMultiplier: 0.5
+itemCapacity: 800
+constructTime: 21600
+upgrades: [
+    [t1-reliavent, t2-silo-array],
+    [t1-melter, t2-evasculator],
+    [t1-paralysis, t2-ravager],
+]
+consumes: {
+    power: 66.6666666666666666666
+    items: {
+        items: [
+	adamantite/285
+	surge-alloy/440
+	silicon/560
+	graphite/400
+        ]
+    }
+  liquid: {
+    liquid: cryogenic-fluid
+    amount: 0.16666666666666666666
+  }
+}
+requirements: [
+    lead/1000
+    silicon/800
+    thorium/500
+    adamantite/180
+]
+category: units
+research: t1-adamantite-unit-constructor

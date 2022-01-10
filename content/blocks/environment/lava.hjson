@@ -1,0 +1,14 @@
+//type: Floor
+name: Lava
+variants: 1
+emitLight: true
+lightRadius: 65
+lightColor: FFA500
+blendGroup: basalt
+cacheLayer: mud
+solid: false
+placeableOn: false
+isLiquid: true
+drownTime: 300
+speedMultiplier: 0.8
+statusDuration: 120

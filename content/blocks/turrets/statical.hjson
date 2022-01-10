@@ -1,0 +1,142 @@
+type: ItemTurret
+name: Statical
+description: Only fires ammo types with special properties.
+health: 1500
+size: 4
+reloadTime: 15
+shots: 2
+spread: 4
+range: 420
+alternate: true
+targetAir: true
+targetGround: true
+ammoUseEffect: casing1
+inaccuracy: 2
+rotateSpeed: 8
+coolantMultiplier: 3
+ammoTypes: {
+ pyratite: {
+    speed: 6
+    reloadMultiplier: 1.0
+    damage: 15
+    lifetime: 60
+    width: 12
+    height: 12
+    shootEffect: shootSmall
+    status: burning
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 3
+    hitEffect: fire
+   }
+ fireatite: {
+    speed: 6
+    damage: 25
+    lifetime: 60
+    width: 12
+    height: 12
+    shootEffect: shootSmall
+    status: melting
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 3
+    hitEffect: explosion
+    hitSound: boom
+  }
+ plastanium: {
+    speed: 6
+    reloadMultiplier: 1
+    damage: 20
+    lifetime: 60
+    fragBullets: 8
+    fragBullet: fragPlasticFrag 
+    width: 12
+    height: 12
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 3
+   }
+ scrap: {
+    speed: 6
+    reloadMultiplier: 1
+    damage: 10
+    lifetime: 60
+    fragBullets: 4
+    fragBullet: fragPlasticFrag 
+    width: 10
+    height: 10
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 3
+   }
+ metaglass: {
+    speed: 6
+    reloadMultiplier: 1
+    damage: 15
+    lifetime: 60
+    fragBullets: 8
+    fragBullet: fragGlassFrag 
+    width: 10
+    height: 10
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 3
+   }
+ silicon: {
+    speed: 4
+    damage: 15
+    lifetime: 70
+    reloadMultiplier: 1
+    width: 12
+    height:12
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    homingPower: 0.1
+    homingRange: 80
+    ammoMultiplier: 3
+   }
+ ice: {
+    speed: 6
+    reloadMultiplier: 1.0
+    damage: 10
+    lifetime: 60
+    width: 12
+    height: 12
+    shootEffect: shootSmall
+    status: freezing
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 3
+   }
+ spore-pod: {
+    speed: 6
+    reloadMultiplier: 1.0
+    damage: 10
+    lifetime: 60
+    width: 12
+    height: 12
+    shootEffect: shootSmall
+    status: tarred
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 3
+   }
+ surge-alloy: {
+    speed: 6
+    reloadMultiplier: 1
+    damage: 25
+    lifetime: 30
+    lightning: 4
+    lightningLength: 12
+    status: shocked
+    width: 12
+    height: 12
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 3
+   }
+}
+requirements: [
+   surge-alloy/25
+   titanium/200
+   silicon/200
+   lead/100
+]
+category: turret
+research: arfazatan

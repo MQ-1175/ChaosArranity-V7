@@ -1,0 +1,18 @@
+//type: GenericSmelter
+name: Titanium Ejector
+description: Ejects either metaglass or silicon from titanium. Requires moderate amounts of power to function. Useful when there is no sand in the region.
+liquidCapacity: 0
+itemCapacity: 30
+size: 2
+health: 260
+updateEffect: smeltsmoke
+requirements: [
+   silicon/280
+   titanium/200
+   metaglass/100
+   lead/180
+   copper/200
+]
+category: crafting
+research: silicon-crucible
+

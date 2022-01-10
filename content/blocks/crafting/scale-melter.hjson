@@ -1,0 +1,35 @@
+type: GenericSmelter
+name: Scale Melter
+description: Mixes oil and thorium to produce scale.
+liquidCapacity: 50
+outputLiquid: {
+  liquid: scale
+  amount: 20
+}
+size: 2
+health: 440
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 120
+updateEffect: smeltsmoke
+consumes: {
+  power: 4
+  items: {
+    items: [
+      thorium/4
+    ]
+  }
+  liquid: {
+    liquid: oil
+    amount: 0.3333333333333
+  }
+}
+requirements: [
+  thorium/75
+  titanium/75
+  metaglass/30
+]
+category: crafting
+research: melter
+

@@ -1,0 +1,17 @@
+type: router
+name: Adamantite Distributor
+description: A distributor made out of adamantite. Very durable, but also expensive.
+size: 2
+researchCostMultiplier: 0.5
+health: 4000
+outlineColor: c30d40
+canOverdrive: false
+requirements: [
+     adamantite/2
+     surge-alloy/2
+     phase-fabric/2
+     silicon/4
+]
+group: transportation
+category: distribution
+research: distributor

@@ -1,0 +1,31 @@
+  type: OverdriveProjector
+  name: Overdriver
+  description: A smaller and less powerful overdrive projector. Uses silicon to boost range and speed.
+  health: 90
+  hasItems: true
+  hasLiquids: false
+  itemCapacity: 10
+  consumes: {
+    power: 0.6666666666666666
+    items: {
+       items: [
+          silicon/1
+       ]
+       optional: true
+       booster: true
+    }
+  }
+  size: 1
+  range: 40
+  speedBoost: 1.25
+  phaseRangeBoost: 32
+  speedBoostPhase: 0.25
+  useTime: 480
+  category: effect
+  requirements: [
+      lead/100
+      graphite/50
+      silicon/45
+  ]
+category: effect
+research: mender

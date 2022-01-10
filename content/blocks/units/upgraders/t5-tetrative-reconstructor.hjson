@@ -1,0 +1,36 @@
+type: Reconstructor
+name: Tetrative Chaos Reconstructor
+description: Upgrades Chaos Arranity's units to the fifth and final tier. Avoids conflict with other mods in the process.
+size: 9
+constructTime: 14400
+liquidCapacity: 180
+upgrades: [
+    [t4-arcaster, t5-titan],
+    [t4-ffa, t5-ignition],
+    [t4-director, t5-leader]
+]
+consumes: {
+    power: 25
+    items: {
+        items: [
+            silicon/1000
+            plastanium/600
+            surge-alloy/500
+            phase-fabric/350
+        ]
+    }
+  liquid: {
+    liquid: cryofluid
+    amount: 3
+  }
+}
+requirements: [
+    lead/4000
+    thorium/1000
+    silicon/3000
+    plastanium/600
+    phase-fabric/600
+    surge-alloy/800
+]
+category: units
+research: tetrative-reconstructor

@@ -1,0 +1,62 @@
+type: ItemTurret
+name: Shockwave
+description: Fires rapid bursts of bullets.
+health: 1500
+size: 3
+reloadTime: 180
+shots: 12
+burstSpacing: 3
+xRand: 8
+range: 90
+recoilAmount: 1.5
+targetAir: true
+targetGround: true
+ammoUseEffect: casing1
+inaccuracy: 10
+rotateSpeed: 15
+ammoTypes: {
+ graphite: {
+    speed: 6
+    damage: 30
+    width: 8
+    height: 10
+    lifetime: 60
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+    hitEffect: hitBulletSmall 
+}
+ silicon: {
+    speed: 6
+    damage: 30
+    width: 8
+    height: 10
+    lifetime: 70
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    homingPower: 0.2
+    homingRange: 64
+    ammoMultiplier: 2
+    hitEffect: hitBulletSmall 
+}
+ plastanium: {
+    speed: 6
+    damage: 35
+    width: 8
+    height: 10
+    fragBullets: 3
+    fragBullet: fragPlasticFrag 
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+    hitEffect: hitBulletSmall 
+  }
+}
+requirements: [
+   titanium/220
+   lead/100
+   plastanium/40
+   graphite/80
+]
+category: turret
+research: ripple

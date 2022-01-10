@@ -1,0 +1,17 @@
+type: Floor
+name: Scale
+solid: false
+variants: 1
+placeableOn: true
+targetable: false
+canOverdrive: false
+cacheLayer: tar
+hasShadow: false
+destructible: false
+speedMultiplier: 0.6
+damageTaken: 0
+drownTime: 180
+isLiquid: true
+liquidDrop: scale
+liquidMultiplier: 0.5
+playerUnmineable: true

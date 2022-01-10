@@ -1,0 +1,15 @@
+type: wall
+name: Large Adamantite Wall
+description: Extremely durable wall. Spans multiple tiles.
+size: 2
+researchCostMultiplier: 0.5
+health: 24000
+outlineColor: c30d40
+canOverdrive: false
+absorbLasers: true
+requirements: [
+     adamantite/24
+]
+group: walls
+category: defense
+research: adamantite-wall

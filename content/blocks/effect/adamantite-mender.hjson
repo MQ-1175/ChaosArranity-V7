@@ -1,0 +1,31 @@
+type: MendProjector
+name: Adamantite Mender
+description: Powerful Mender.
+size: 2
+researchCostMultiplier: 0.5
+health: 1000
+outlineColor: c30d40
+canOverdrive: true
+reload: 6
+range: 96
+healPercent: 1
+phaseBoost: 0
+phaseRangeBoost: 96
+useTime: 300
+  consumes: {
+    power: 5
+    liquid: {
+       liquid: scale
+       amount: 0.2
+       optional: true
+       booster: true
+     }
+  }
+requirements: [
+   adamantite/20
+   titanium/300
+   silicon/330
+   lead/400
+]
+category: effect
+research: mend-projector

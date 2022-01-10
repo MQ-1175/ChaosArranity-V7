@@ -1,0 +1,36 @@
+type: UnitFactory
+name: Chaos Unit Constructor: Ground
+description: Produces units from chaos arranity and avoids conflict with other mods.
+health: 360
+size: 3
+requirements: [
+   copper/50
+   lead/120
+   silicon/80
+]
+
+plans: [
+    {
+        unit: t1-dalish
+        requirements: [
+            silicon/5
+        ]
+        time: 300
+    },
+    {
+        unit: t1-officer
+        requirements: [
+            silicon/10
+            lead/10
+            odium/10
+        ]
+        time: 780
+    }
+]
+
+
+category: units
+consumes: {
+    power:1.2
+}
+research: ground-factory

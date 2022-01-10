@@ -1,0 +1,31 @@
+type: ForceProjector
+name: Adamantite Force Projector
+description: A more compact force projector made using adamantite. Handles extreme amounts of damage.
+size: 2
+researchCostMultiplier: 0.5
+liquidCapacity: 12
+health: 10000
+outlineColor: c30d40
+phaseRadiusBoost: 120
+cooldownLiquid: 4
+radius: 96
+shieldHealth: 10000
+consumes: {
+   power: 4
+   items: {
+      items: [
+         phase-fabric/1
+      ]
+      optional: true
+      booster: true
+   }
+  }
+requirements: [
+     adamantite/100
+     lead/200
+     thorium/200
+     titanium/200
+     silicon/300
+]
+category: effect
+research: force-projector

@@ -1,0 +1,27 @@
+type: GenericSmelter
+name: Odium Smelter
+description: Smelts Metaglass, Ice, and Spores into Odium.
+size: 2
+health: 165
+hasPower: true
+hasItems: true
+craftTime: 90
+updateEffect: smeltsmoke
+consumes: {
+  power: 2
+  items: {
+    items: [
+     metaglass/1
+     ice/1
+     spore-pod/1
+    ]
+  }
+}
+requirements: [
+  copper/80
+  metaglass/40
+  silicon/120
+]
+category: crafting
+research: silicon-smelter
+outputItem: odium/1

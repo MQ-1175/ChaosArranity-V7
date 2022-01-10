@@ -1,0 +1,18 @@
+//type: GenericSmelter
+name: Thorium Ejector
+description: Ejects either metaglass or silicon from thorium. Requires large amounts of power to function. Useful when there is no sand in the region.
+liquidCapacity: 0
+itemCapacity: 30
+size: 2
+health: 320
+updateEffect: smeltsmoke
+requirements: [
+   silicon/300
+   thorium/200
+   metaglass/120
+   lead/200
+   copper/220
+]
+category: crafting
+research: silicon-crucible
+

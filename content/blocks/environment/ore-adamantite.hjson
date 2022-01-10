@@ -1,0 +1,6 @@
+type: OreBlock
+name: Adamantite
+variants: 5
+playerUnmineable: true
+itemDrop: adamantite
+oreDefault: false

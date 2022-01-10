@@ -1,0 +1,84 @@
+type:ItemTurret
+name: Microburst
+description: Fires a spread of 6 bullets.
+health: 360
+size: 2
+reloadTime: 30
+range: 104
+targetAir: false
+targetGround: true
+ammoUseEffect: casing1
+inaccuracy: 16
+rotateSpeed: 6
+coolantMultiplier: 6
+shots: 6
+spread: 10
+ammoTypes: {
+ graphite: {
+    speed: 6
+    lifetime: 20
+    damage: 22
+    width: 8
+    height: 8
+    reloadMultiplier: 0.8
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 4
+  }
+ pyratite: {
+    speed: 6
+    lifetime: 20
+    damage: 19
+    width: 10
+    height: 10
+    status: burning
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+   }
+ silicon: {
+    speed: 6
+    lifetime: 20
+    reloadMultiplier: 1.4
+    damage: 15
+    width: 5
+    height: 5
+    homingPower: 0.3
+    homingRange: 64
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 4
+   }
+  copper: {
+    speed: 6
+    lifetime: 20
+    reloadMultiplier: 1
+    damage: 17
+    width: 6
+    height: 6
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+   }
+  metaglass: {
+    speed: 6
+    lifetime: 20
+    reloadMultiplier: 1.2
+    damage: 15
+    width: 6
+    height: 6
+    fragBullets: 3
+    fragBullet: fragGlassFrag
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 3
+   }
+}
+requirements: [
+   lead/40
+   copper/70
+   graphite/30
+]
+category: turret
+research: duo
+

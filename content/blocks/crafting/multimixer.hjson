@@ -1,0 +1,16 @@
+//type: GenericCrafter
+name: Multi Mixer
+description: An upgraded form of all 3 mixers. Can be set to produce either pyratite, blast compound, or fireatite. More efficient than the original designs.
+liquidCapacity: 0
+itemCapacity: 50
+size: 4
+health: 280
+updateEffect: smeltsmoke
+requirements: [
+   titanium/230
+   silicon/280
+   copper/320
+   metaglass/225
+]
+category: crafting
+research: fireatite-mixer

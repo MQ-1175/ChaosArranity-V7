@@ -1,0 +1,29 @@
+type: Reconstructor
+name: Multiplicative Chaos Reconstructor
+description: Upgrades Chaos Arranity's units to the third tier. Avoids conflict with other mods in the process.
+health: 1000
+size: 5
+constructTime: 1800
+upgrades: [
+    [t2-marginator, t3-relametion],
+    [t2-silocrafter, t3-incinerator],
+    [t2-chief, t3-manager]
+]
+consumes: {
+    power: 6
+    items: {
+        items: [
+            silicon/130
+            titanium/80
+            metaglass/40
+        ]
+    }
+}
+requirements: [
+    lead/650
+    titanium/350
+    thorium/650
+    silicon/450
+]
+category: units
+research: additive-reconstructor

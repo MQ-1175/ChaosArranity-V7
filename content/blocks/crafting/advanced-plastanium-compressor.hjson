@@ -1,0 +1,33 @@
+type: GenericCrafter
+name: Advanced Plastanium Compressor
+description: A much more efficient Plastanium Compressor.
+liquidCapacity: 300
+itemCapacity: 1000
+size: 3
+health: 480
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 120
+outputItem: plastanium/30
+consumes: {
+  power: 5.3333333333333333333333
+  items: {
+     items: [
+        titanium/40
+     ]
+  }
+  liquid: {
+    liquid: oil
+    amount: 1.3333333333333333333333
+  }
+}
+requirements: [
+   graphite/220
+   titanium/190
+   silicon/190
+   metaglass/120
+   lead/80
+]
+category: crafting
+research: plastanium-compressor

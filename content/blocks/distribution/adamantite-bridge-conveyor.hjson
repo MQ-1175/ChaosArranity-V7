@@ -1,0 +1,22 @@
+type: ItemBridge
+name: Adamantite Bridge Conveyor
+description: A form of bridge conveyor that can transport many items over a very far distance nearly instantly.
+size: 1
+researchCostMultiplier: 0.5
+hasPower: false
+health: 10000
+itemCapacity: 20
+outlineColor: c30d40
+canOverdrive: false
+requirements: [
+     adamantite/30
+     lead/100
+     titanium/100
+     thorium/100
+     phase-fabric/10
+]
+range: 20
+transportTime: 2
+group: transportation
+category: distribution
+research: phase-conveyor

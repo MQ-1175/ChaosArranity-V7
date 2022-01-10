@@ -1,0 +1,36 @@
+type: GenericSmelter
+name: Advanced Cryofluid Mixer
+description: Mixes water and titanium to make lots of cryofluid.
+liquidCapacity: 50
+itemCapacity: 20
+outputLiquid: {
+  liquid: cryofluid
+  amount: 144
+}
+size: 2
+health: 340
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 180
+updateEffect: smeltsmoke
+consumes: {
+  power: 3
+  items: {
+    items: [
+      titanium/5
+    ]
+  }
+  liquid: {
+    liquid: water
+    amount: 0.8
+  }
+}
+requirements: [
+  thorium/200
+  titanium/100
+  graphite/100
+  silicon/75
+]
+category: crafting
+research: cryofluid-mixer

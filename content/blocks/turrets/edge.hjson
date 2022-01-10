@@ -1,0 +1,30 @@
+type: ItemTurret
+name: Edge
+description: An experimental turret, fires copper rounds at extreme speeds. Unable to be boosted with coolant.
+health: 1500
+size: 2
+reloadTime: 1
+range: 210
+targetAir: true
+targetGround: true
+ammoUseEffect: casing1
+inaccuracy: 0
+rotateSpeed: 8
+coolantMultiplier: 0
+ammoTypes: {
+ copper: {
+    speed: 8
+    damage: 10
+    width: 8
+    height: 8
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+  }
+}
+requirements: [
+  lead/200
+  graphite/215
+  thorium/220
+]
+category: turret
+research: arfazatan

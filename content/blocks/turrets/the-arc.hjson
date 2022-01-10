@@ -1,0 +1,52 @@
+type: PowerTurret
+name: ARC
+description: The most powerful arc based turret to exist. Fires a deathly wave of arcs over insane distances.
+health: 90000
+size: 16
+hasItems: true
+hasLiquids: true
+hasPower: true
+itemCapacity: 10
+liquidCapacity: 10
+buildCostMultiplier: 0.5
+powerUse: 166.666666666666666666666
+shootSound: spark
+range: 800
+reloadTime: 0.5
+shots: 8
+burstSpacing: 1
+spread: 0
+recoilAmount: 5
+cooldown: 40
+rotateSpeed: 5
+shootCone: 5
+shootShake: 5
+coolantMultiplier: 1.17216117216
+coolantUsage: 5
+targetAir: true
+targetGround: true
+requirements: [
+   adamantite/20000
+   silicon/30000
+   graphite/25000
+   surge-alloy/18000
+   phase-fabric/10000
+   plastanium/20000
+   lead/80000
+]
+consumes: {
+  power: 300000
+}
+shootType: {
+   type: LightningBulletType
+   damage: 1000
+   lightningLength: 100
+   status: {
+      name: electrified
+      speedMultiplier: 0.25
+   }
+   statusDuration: 10
+}
+group: turrets
+category: turret
+research: arc-mk3

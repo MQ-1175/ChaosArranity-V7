@@ -1,0 +1,19 @@
+type: junction
+name: Adamantite Junction
+description: A junction made out of adamantite. Very durable and fast, but also expensive.
+size: 1
+researchCostMultiplier: 0.5
+health: 1500
+speed: 15
+itemCapacity: 10
+outlineColor: c30d40
+canOverdrive: false
+requirements: [
+     adamantite/1
+     lead/30
+     titanium/30
+     thorium/30
+]
+group: transportation
+category: distribution
+research: junction

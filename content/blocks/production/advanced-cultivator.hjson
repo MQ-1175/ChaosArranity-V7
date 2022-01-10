@@ -1,0 +1,23 @@
+type: Cultivator
+name: Advanced Cultivator
+description: Drills for water, then waters the spore pods to make them industry ready. Much more efficent than the cultivator.
+liquidCapacity: 20
+itemCapacity: 20
+size: 2
+health: 350
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 240
+consumes: {
+     power: 3
+}
+requirements: [
+  titanium/100
+  thorium/100
+  graphite/20
+  silicon/20
+]
+category: production
+research: cultivator
+outputItem: spore-pod/8

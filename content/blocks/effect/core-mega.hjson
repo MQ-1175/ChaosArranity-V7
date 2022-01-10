@@ -1,0 +1,20 @@
+type: CoreBlock
+name: Core: Mega
+description: Core of the base. Insanely well armored. Stores more than a Nucleus.
+size: 6
+health: 35000
+hasItems: true
+hasLiquids: false
+hasPower: false
+itemCapacity: 20000
+unitType: delta
+unitCapModifier: 50
+requirements: [
+     copper/15000
+     lead/15000
+     thorium/12000
+     silicon/18000
+     adamantite/1250
+]
+category: effect
+research: core-nucleus

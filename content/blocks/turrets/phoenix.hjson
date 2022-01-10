@@ -1,0 +1,72 @@
+type: ItemTurret
+name: Phoenix
+description: Sprays small shells at anything within range.
+health: 1500
+size: 4
+reloadTime: 1
+range: 130
+targetAir: false
+targetGround: true
+ammoUseEffect: casing1
+inaccuracy: 6
+spread: 0.3
+velocityInaccuracy: 0.08
+rotateSpeed: 8
+coolantMultiplier: 0.0
+canOverdrive: true
+shots: 10
+ammoTypes: {
+  blast-compound: {
+    speed: 6
+    lifetime: 30
+    ammoMultiplier: 1
+    damage: 27
+    width: 10
+    height: 10
+    hitEffect: blastExplosion
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+   }
+  titanium: {
+    speed: 6
+    lifetime: 26
+    ammoMultiplier: 1
+    damage: 16
+    width: 10
+    height: 10
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+   }
+ fireatite: {
+    speed: 6
+    lifetime: 30
+    ammoMultiplier: 1
+    damage: 32
+    width: 10
+    height: 10
+    status: burning
+    hitEffect: explosion
+    hitSound: boom
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+  }
+  adamantite: {
+    speed: 6
+    lifetime: 30
+    ammoMultiplier: 1
+    damage: 62
+    width: 10
+    height: 10
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+   }
+}
+requirements: [
+   titanium/800
+   graphite/500 
+   thorium/400
+   plastanium/325
+   surge-alloy/280
+]
+category: turret
+research: megaburst

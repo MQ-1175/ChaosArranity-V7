@@ -1,0 +1,49 @@
+type: UnitFactory
+name: Adamantite Unit Constructor
+description: Produces adamantite units.
+health: 500
+size: 3
+researchCostMultiplier: 0.5
+requirements: [
+   adamantite/220
+   surge-alloy/780
+   thorium/1000
+   silicon/1000
+]
+
+plans: [
+    {
+        unit: t1-reliavent
+        requirements: [
+	adamantite/150
+	plastanium/400
+	silicon/400
+        ]
+        time: 7200
+    }
+    {
+        unit: t1-melter
+        requirements: [
+	adamantite/150
+	thorium/400
+	silicon/400
+        ]
+        time: 7200
+    }
+    {
+        unit: t1-paralysis
+        requirements: [
+	adamantite/150
+	metaglass/400
+	silicon/400
+        ]
+        time: 7200
+    }
+]
+
+
+category: units
+consumes: {
+    power: 33.3333333333333333333
+}
+research: air-factory

@@ -1,0 +1,18 @@
+type: LiquidRouter
+name: Large Liquid Tank
+description: A massive tank capable of storing an immense quantity of liquid.
+size: 4
+researchCostMultiplier: 0.5
+health: 2000
+hasLiquids: true
+hasItems: false
+hasPower: false
+liquidCapacity: 8000
+outlineColor: c30d40
+requirements: [
+     metaglass/250
+     titanium/100
+     adamantite/20
+]
+category: liquid
+research: liquid-tank

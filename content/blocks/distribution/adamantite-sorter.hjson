@@ -1,0 +1,18 @@
+type: Sorter
+name: Adamantite Sorter
+description: A Sorter made out of adamantite. Very durable, but also expensive.
+size: 1
+researchCostMultiplier: 0.5
+health: 1500
+outlineColor: c30d40
+canOverdrive: true
+buildCostMultiplier: 0.5
+requirements: [
+     adamantite/1
+     surge-alloy/1
+     phase-fabric/2
+     silicon/2
+]
+group: transportation
+category: distribution
+research: sorter

@@ -1,0 +1,30 @@
+type: GenericSmelter
+name: Fireatite Mixer
+description: Mixes flammable materials to make the most flammable thing in existance. Handle with extreme care.
+liquidCapacity: 0
+size: 2
+health: 300
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 30
+updateEffect: smeltsmoke
+consumes: {
+  power: 5
+  items: {
+    items: [
+     blast-compound/3
+     coal/2
+     spore-pod/4
+    ]
+  }
+}
+requirements: [
+  surge-alloy/75
+  plastanium/100
+  silicon/200
+  graphite/200
+]
+category: crafting
+research: blast-mixer
+outputItem: fireatite/1

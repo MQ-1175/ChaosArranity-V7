@@ -1,0 +1,75 @@
+type: ItemTurret
+name: Ridge
+description: A better, larger advanced duo.
+health: 1600
+size: 2
+reloadTime: 12
+range: 216
+shots: 2
+spread: 2
+alternate: true
+targetAir: true
+targetGround: true
+ammoUseEffect: casing1
+inaccuracy: 2
+rotateSpeed: 8
+coolantMultiplier: 1
+coolantUsage: 0.083333333333333333333333
+ammoTypes: {
+ copper: {
+    speed: 6
+    damage: 12
+    reloadMultiplier: 1.0
+    ammoMultiplier: 2
+    width: 7
+    height: 7
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 1
+   }
+ graphite: {
+    speed: 8
+    damage: 24
+    reloadMultiplier: 0.6
+    width: 8
+    height: 8
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 3
+   }
+ silicon: {
+    speed: 4
+    damage: 16
+    reloadMultiplier: 1.6
+    width: 6
+    height: 6
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    homingPower: 0.1
+    homingRange: 80
+    ammoMultiplier: 2
+   }
+ ice: {
+    speed: 5
+    damage: 10
+    width: 5
+    height: 5
+    frontColor: b7cbf4
+    backColor: 9db5e5
+    fragBullets: 4
+    fragBullet: {
+        lifetime: 12
+        speed: 5
+        damage: 6
+        width: 5
+        height: 5
+        frontColor: b7cbf4
+        backColor: 9db5e5
+    }
+   }
+}
+requirements: [
+   copper/220
+]
+category: turret
+research: duo

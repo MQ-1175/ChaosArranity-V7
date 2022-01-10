@@ -1,0 +1,35 @@
+type: GenericCrafter
+name: Graphite Factory
+description: A large graphite press design, uses surge alloy to press coal into graphite in mass. Requires cryofluid as coolant.
+liquidCapacity: 30
+itemCapacity: 50
+size: 5
+health: 1000
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 30
+updateEffect: pulverizeMedium
+outputItem: graphite/8
+consumes: {
+  power: 10
+  items: {
+    items: [
+     coal/10
+    ]
+  }
+  liquid: {
+    liquid: cryofluid
+    amount: 0.133333333333333333
+  }
+}
+requirements: [
+   silicon/300
+   plastanium/250
+   graphite/225
+   surge-alloy/200
+   lead/180
+]
+category: crafting
+research: multi-press
+

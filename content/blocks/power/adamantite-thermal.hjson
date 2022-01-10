@@ -1,0 +1,22 @@
+type: ThermalGenerator
+name: Adamantite Thermal Generator
+description: A more efficient Thermal Generator.
+size: 2
+researchCostMultiplier: 0.5
+health: 800
+hasPower: true
+hasItems: false
+hasLiquids: false
+floating: true
+powerProduction: 5.4
+requirements: [
+  metaglass/80
+  silicon/50
+  graphite/60
+  lead/210
+  thorium/75
+  adamantite/5
+]
+category: power
+research: thermal-generator
+generateEffect: redgeneratespark

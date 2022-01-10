@@ -1,0 +1,43 @@
+type: PowerTurret
+name: Arc MKII
+description: An upgraded version of arc. Fires more deadly arcs of electricity.
+health: 600
+size: 2
+hasItems: true
+hasLiquids: true
+hasPower: true
+itemCapacity: 10
+liquidCapacity: 10
+buildCostMultiplier:1
+powerUse: 5
+shootSound: spark
+range: 144
+reloadTime: 8
+spread: 0
+recoilAmount: 1
+cooldown: 0.05
+rotateSpeed: 5
+shootCone: 2
+inaccuracy: 0
+shootShake: 2
+coolantMultiplier: 9
+coolantUsage: 0.5
+targetAir: true
+targetGround: true
+requirements: [
+  lead/250
+  titanium/75
+  silicon/50
+  graphite/50
+ 
+]
+consumes: {
+  power: 2
+}
+shootType: {
+   type: LightningBulletType
+   damage: 24
+}
+group: turrets
+category: turret
+research: arc

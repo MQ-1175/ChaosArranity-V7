@@ -1,0 +1,88 @@
+type: ItemTurret
+name: Megaburst
+description: Upgraded version of the Microburst with more range and faster fire-rate.
+health: 800
+size: 3
+reloadTime: 30
+range: 160
+targetAir: false
+targetGround: true
+ammoUseEffect: casing1
+inaccuracy: 18
+rotateSpeed: 8
+coolantMultiplier: 6
+shots: 16
+spread: 10
+ammoTypes: {
+ silicon: {
+    speed: 6
+    lifetime: 30
+    reloadMultiplier: 1.4
+    damage: 20
+    width: 8
+    height: 8
+    homingPower: 0.3
+    homingRange: 64
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 3
+   }
+  graphite: {
+    speed: 6
+    lifetime: 30
+    reloadMultiplier: 1
+    damage: 25
+    width: 8
+    height: 8
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+   }
+  thorium: {
+    speed: 6
+    lifetime: 30
+    reloadMultiplier: 1
+    damage: 35
+    width: 10
+    height: 10
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+   }
+ blast-compound: {
+    speed: 6
+    lifetime: 30
+    damage: 30
+    width: 12
+    height: 12
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    splashDamage: 25
+    splashDamageRadius: 32
+    hitEffect: explosion
+    hitSound: boom
+    ammoMultiplier: 4
+   }
+  pyratite: {
+    speed: 6
+    lifetime: 30
+    reloadMultiplier: 1
+    damage: 25
+    status: burning
+    width: 8
+    height: 8
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+    hitEffect: fire
+   }
+}
+requirements: [
+   titanium/80
+   lead/200
+   graphite/150
+   surge-alloy/10
+]
+category: turret
+research: microburst
+

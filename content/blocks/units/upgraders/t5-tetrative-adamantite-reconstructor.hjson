@@ -1,0 +1,42 @@
+type: Reconstructor
+name: Tetrative Adamantite Reconstructor
+description: Upgrades adamantite units to the fifth and final tier
+health: 9000
+size: 9
+researchCostMultiplier: 0.5
+itemCapacity: 2000
+constructTime: 50400
+upgrades: [
+    [t4-carnage, t5-destruction],
+    [t4-catastrophere, t5-death],
+    [t4-warmonger, t5-demise],
+]
+consumes: {
+    power: 166.66666666666666
+    items: {
+        items: [
+	adamantite/1000
+	silicon/2000
+	graphite/2000
+	surge-alloy/1800
+	plastanium/1500
+	thorium/1200
+	phase-fabric/1000
+        ]
+    }
+  liquid: {
+    liquid: cryogenic-fluid
+    amount: 1
+  }
+}
+requirements: [
+    graphite/2000
+    silicon/2000
+    plastanium/1000
+    surge-alloy/1000
+    adamantite/600
+    odium-refined/1000
+    odium/250
+]
+category: units
+research: t4-exponential-adamantite-reconstructor

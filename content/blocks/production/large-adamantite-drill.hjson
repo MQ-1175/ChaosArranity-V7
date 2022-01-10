@@ -1,0 +1,28 @@
+name: Large Adamantite Drill
+description: A larger version of a regular adamantite drill that can cover more tiles to drill more efficiently.
+type: Drill
+health: 1600
+liquidCapacity: 12
+size: 4
+researchCostMultiplier: 0.5
+tier: 30
+rotateSpeed: 4
+drillTime: 20
+liquidBoostIntensity: 2
+consumes: {
+  power: 7
+  liquid: {
+    liquid: scale
+    amount: 0.8
+    booster: true
+    optional: true
+  }
+}
+requirements: [
+  adamantite/80
+  surge-alloy/200
+  metaglass/500
+  plastanium/500
+]
+category: production
+research: blast-drill

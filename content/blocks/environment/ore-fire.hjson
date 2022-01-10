@@ -1,0 +1,6 @@
+type: OreBlock
+name: Fireatite
+variants: 1
+playerUnmineable: true
+itemDrop: fireatite
+oreDefault: false

@@ -1,0 +1,21 @@
+name: Hyperwall
+description: Utilizes the power of odium to create a form of hyperwall that has phase, surge, and plastanium like properties. Protects structures from enemy projectiles.
+size: 2
+update: true
+health: 4800
+buildCostMultiplier: 0.45
+lightningChance: 1
+lightningDamage: 14
+lightningLength: 8
+chanceDeflect: 35
+absorbLasers: true
+requirements: [
+   phase-fabric/24
+   odium/24
+   odium-refined/24
+   surge-alloy/24
+   ice/24
+]
+group: walls
+category: defense
+research: phase-wall-large

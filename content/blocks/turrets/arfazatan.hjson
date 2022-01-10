@@ -1,0 +1,135 @@
+type: ItemTurret
+name: Arfazatan
+description: Shoots several types of clustered bullets. Uses unsual ammo, good when there are few resources to spare.
+health: 1500
+size: 2
+reloadTime: 15
+range: 200
+targetAir: true
+targetGround: true
+ammoUseEffect: casing1
+inaccuracy: 0
+rotateSpeed: 6
+coolantMultiplier: 8
+coolantUsage: 0.5
+ammoTypes: {
+  lead: {
+    speed: 7
+    damage: 14
+    width: 10
+    height: 10
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+   }
+ scrap: {
+    speed: 6
+    damage: 15
+    fragBullets: 8
+    fragBullet: fragPlasticFrag 
+    width: 9
+    height: 9
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+   }
+ fireatite: {
+    speed: 6
+    damage: 34
+    width: 12
+    height: 12
+    shootEffect: shootSmall
+    status: melting
+    smokeEffect: shootSmallSmoke
+    hitEffect: explosion
+    despawnEffect: explosion
+    hitSound: boom
+    ammoMultiplier: 2
+  }
+ titanium: {
+    speed: 8
+    damage: 22
+    width: 12
+    height: 12
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+   }
+ phase-fabric: {
+    speed: 5
+    damage: 25
+    collidesTeam: true
+    healPercent: 15
+    width: 12
+    height: 12
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+   }
+ coal: {
+    speed: 5
+    damage: 16
+    width: 10
+    height: 10
+    shootEffect: shootSmall
+    status: burning
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+   }
+ spore-pod: {
+    speed: 5
+    damage: 14
+    width: 10
+    height: 10
+    shootEffect: shootSmall
+    status: sporeSlowed
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+   }
+ ice: {
+    speed: 5
+    damage: 13
+    width: 10
+    height: 10
+    frontColor: b7cbf4
+    backColor: 9db5e5
+    shootEffect: shootSmall
+    fragBullets: 6
+    fragBullet: {
+        lifetime: 20
+        speed: 6
+        damage: 10
+        width: 5
+        height: 5
+        frontColor: b7cbf4
+        backColor: 9db5e5
+    }
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+   }
+  odium: {
+    speed: 6
+    damage: 17
+    width: 10
+    height: 10
+    fragBullets: 4
+    fragBullet: {
+        lifetime: 10
+        speed: 4
+        damage: 15
+        width: 8
+        height: 6
+    }
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+   }
+}
+requirements: [
+  lead/250
+  graphite/100
+  titanium/75
+  odium/300
+]
+category: turret
+research: ripple

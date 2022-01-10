@@ -1,0 +1,27 @@
+type: GenericSmelter
+name: Compact Plastanium Compressor
+description: Uses pressure to convert raw evil into plastanium. More compact than a regular plastanium compresser, but it costs an immense amount of power to operate
+liquidCapacity: 100
+size: 1
+health: 600
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 6
+updateEffect: none
+outputItem: plastanium/1
+consumes: {
+  power: 8
+  liquid: {
+    liquid: scale
+    amount: 0.25
+  }
+}
+requirements: [
+  titanium/300
+  silicon/100
+  graphite/200
+  thorium/300
+]
+category: crafting
+research: advanced-plastanium-compressor

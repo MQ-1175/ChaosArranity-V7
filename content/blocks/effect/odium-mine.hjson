@@ -1,0 +1,12 @@
+//type: ShockMine
+name: Odium Mine
+description: Releases fragments of odium upon enemy contact.
+size: 1
+health: 60
+hasShadow: false
+requirements: [
+     silicon/25
+     odium/12
+]
+category: effect
+research: shock-mine

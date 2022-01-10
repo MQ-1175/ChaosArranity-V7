@@ -1,0 +1,23 @@
+name: Adamantite Launchpad
+description: Fires large amounts of materials to sectors. A much better launch pad, improved via adamantite.
+size: 4
+buildVisibility: campaignOnly
+lightColor: c30d40
+researchCostMultiplier: 0.5
+health: 35000
+hasItems: true
+hasLiquids: false
+hasPower: true
+itemCapacity: 1000
+launchTime: 1800
+consumes: {
+   power: 16.667
+}
+requirements: [
+   adamantite/250
+   silicon/1000
+   titanium/700
+   metaglass/300
+]
+category: effect
+research: launch-pad

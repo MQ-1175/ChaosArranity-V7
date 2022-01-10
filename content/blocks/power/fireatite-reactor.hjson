@@ -1,0 +1,35 @@
+type: ImpactReactor
+name: Fireatite Reactor
+description: A highly advanced power generator. Fuses fireatite and cryogenic fluid to make a massive detonating reaction to make insane amounts of power.
+size: 6
+researchCostMultiplier: 0.5
+health: 12000
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemDuration: 60
+powerProduction: 583.3333333333333
+explosionDamage: 40000
+consumes: {
+  power: 83.333333333333
+  items: {
+    items: [
+          fireatite/1
+    ]
+  }
+  liquid: {
+    liquid: cryogenic-fluid
+    amount: 0.2
+  }
+}
+requirements: [
+  silicon/600
+  surge-alloy/400
+  graphite/500
+  adamantite/180
+  plastanium/550
+]
+category: power
+research: impact-reactor
+ambientSound: firePulse
+ambientSoundVolume: 0.8

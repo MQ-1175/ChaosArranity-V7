@@ -1,0 +1,16 @@
+type: LiquidJunction
+name: Adamantite Liquid Junction
+description: A liquid junction made out of adamantite. Very durable, but also expensive.
+size: 1
+researchCostMultiplier: 0.5
+health: 1500
+outlineColor: c30d40
+canOverdrive: false
+buildCostMultiplier: 0.5
+requirements: [
+     adamantite/3
+     metaglass/30
+]
+group: liquids
+category: liquid
+research: liquid-junction

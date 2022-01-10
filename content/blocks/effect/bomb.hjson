@@ -1,0 +1,35 @@
+type: NuclearReactor
+name: Bomb
+description: Uses the power of fireatite to create a violent explosion. (Do not try to cool it, it is meant to explode)
+size: 2
+researchCostMultiplier: 0.5
+health: 1200
+hasPower: true
+hasItems: true
+hasLiquids: true
+liquidCapacity: 1
+breakSound: explosionbig
+baseExplosiveness: 100
+explosionRadius: 80
+explosionDamage: 4000
+itemDuration: 6000
+powerProduction: 0.1
+heating: 0.1
+consumes: {
+  items: {
+    items: [
+          fireatite/1
+    ]
+  }
+  liquid: {
+    liquid: water
+    amount: 10
+  }
+}
+requirements: [
+  adamantite/5
+  lead/250
+  copper/250
+]
+category: effect
+research: shock-mine

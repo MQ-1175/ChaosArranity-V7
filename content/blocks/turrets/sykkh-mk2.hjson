@@ -1,0 +1,63 @@
+type: ItemTurret
+name: Sykkh MKII
+description: Shoots medium sized clusters of Blast Compound, can do severe damage on groups of enemies. The clusters of blast compound explode into thorium spikes.
+health: 2000
+liquidCapacity: 60
+size: 2
+reloadTime: 60
+range: 288
+minRange: 16
+targetAir: true
+targetGround: true
+shots: 1
+ammoUseEffect: casing3Double
+shootSound: artillery
+inaccuracy: 1
+coolantMultiplier: 4.8
+rotateSpeed: 5
+ammoTypes: {
+  blast-compound: {
+    type: ArtilleryBulletType
+    sprite: chaos-arranity-cluster-shot
+    frontColor: FF795E
+    backColor: FF795E
+    hitEffect: blastExplosion
+    speed: 4
+    lifetime: 90
+    damage: 60
+    knockback: 0.8
+    splashDamage: 60
+    splashDamageRadius: 64
+    width: 15
+    height: 15
+    shrinkY: 0
+    fragVelocityMin: 1
+    fragBullets:10
+    fragBullet: {
+       sprite: chaos-arranity-spike1
+       frontColor: F9A3C7
+       backColor: F9A3C7
+       speed: 5
+       lifetime: 20
+       damage: 40
+       pierce: yes
+       width: 10
+       height: 10
+       shrinkY: -0.2
+       shrinkX: 0.6
+    }
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+   }
+}
+requirements: [
+  copper/100
+  lead/150
+  graphite/110
+  plastanium/10
+  surge-alloy/15
+  odium/5
+]
+category: turret
+research: sykkh-mk1

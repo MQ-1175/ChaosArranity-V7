@@ -1,0 +1,34 @@
+  type: OverdriveProjector
+  name: Adamantite Overdrive Projector
+  description: An upgraded overdrive projector.
+  researchCostMultiplier: 0.5
+  health: 1400
+  hasItems: false
+  hasLiquids: true
+  liquidCapacity: 10
+  consumes: {
+    power: 5
+    liquid: {
+       liquid: scale
+       amount: 0.2
+       optional: true
+       booster: true
+     }
+
+  }
+  size: 4
+  reload: 60
+  range: 320
+  speedBoost: 3
+  phaseRangeBoost: 0
+  speedBoostPhase: 1
+  useTime: 60
+  category: effect
+  requirements: [
+    adamantite/60
+    surge-alloy/250
+    plastanium/500
+    silicon/100
+  ]
+category: effect
+research: overdrive-dome

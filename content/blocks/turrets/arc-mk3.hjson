@@ -1,0 +1,42 @@
+type: PowerTurret
+name: Arc MKIII
+description: Fires a storm of arcs.
+health: 3000
+size: 4
+hasItems: true
+hasLiquids: true
+hasPower: true
+itemCapacity: 10
+liquidCapacity: 10
+buildCostMultiplier:1
+powerUse: 13.333333333333333333333333
+shootSound: spark
+range: 200
+reloadTime: 1
+spread: 0
+recoilAmount: 2
+cooldown: 0.05
+rotateSpeed: 5
+shootCone: 5
+shootShake: 3
+coolantMultiplier: 10
+coolantUsage: 1
+targetAir: true
+targetGround: true
+requirements: [
+  surge-alloy/300
+  silicon/500
+  graphite/200
+  
+  
+]
+consumes: {
+  power: 10
+}
+shootType: {
+   type: LightningBulletType
+   damage: 28
+}
+group: turrets
+category: turret
+research: arc-mk2

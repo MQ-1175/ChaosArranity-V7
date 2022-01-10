@@ -1,0 +1,50 @@
+type: ItemTurret
+name: Sykkh
+description: Shoots a giant cluster of pyratite at enemies.
+health: 1000
+liquidCapacity: 60
+size: 2
+reloadTime: 60
+range: 256
+minRange: 16
+targetAir: false
+targetGround: true
+shots: 6
+ammoUseEffect: casing3Double
+shootSound: artillery
+inaccuracy: 2
+velocityInaccuracy: 0.1
+coolantMultiplier: 4.8
+rotateSpeed: 6
+ammoTypes: {
+  pyratite: {
+    type: ArtilleryBulletType
+    sprite: shell
+    frontColor: FFAA5F
+    backColor: FFAA5F
+    trailColor: FFAA5F
+    trailEffect: incendTrail
+    hitEffect: blastExplosion
+    speed: 4
+    lifetime: 90
+    damage: 30
+    splashDamage: 30
+    splashDamageRadius: 32
+    knockback: 0.5
+    status: burning
+    makeFire: true
+    width: 15
+    height: 15
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+   }
+}
+requirements: [
+  copper/50
+  lead/100
+  graphite/60
+  plastanium/10
+]
+category: turret
+research: ripple

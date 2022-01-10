@@ -1,0 +1,32 @@
+type: Fracker
+name: Adamantite Oil Extractor
+description: A significantly more efficent oil extractor, using adamantite to drill even faster and extract more oil.
+result: oil
+liquidCapacity: 100
+pumpAmount: 0.75
+size: 3
+researchCostMultiplier: 0.5
+health: 800
+attribute: oil
+baseEfficiency: 1.0
+hasPower: true
+hasLiquids: true
+hasItems: false
+itemUseTime: 60
+updateEffect: pulverize
+consumes: {
+     power: 5
+     liquid: {
+        liquid: water
+           amount: 0.2
+     }
+}
+requirements: [
+   plastanium/120
+   adamantite/20
+   silicon/300
+   metaglass/230
+   thorium/80
+]
+category: production
+research: oil-extractor

@@ -1,0 +1,20 @@
+type: conduit
+name: Adamantite Conduit
+description: A conduit made out of adamantite. Very durable and fast, but also expensive.
+size: 1
+researchCostMultiplier: 0.5
+health: 1000
+liquidCapacity: 100
+liquidPressure: 18
+outlineColor: c30d40
+canOverdrive: true
+buildCostMultiplier: 0.5
+requirements: [
+     adamantite/1
+     surge-alloy/1
+     phase-fabric/1
+     metaglass/1
+]
+group: liquids
+category: liquid
+research: plated-conduit

@@ -1,0 +1,26 @@
+type: GenericCrafter
+name: Freezer
+description: Freezes water into ice.
+liquidCapacity: 10
+size: 2
+health: 80
+hasPower: true
+hasLiquids: true
+craftTime: 30
+updateEffect: smeltsmoke
+consumes: {
+  power: 0.25
+  liquid: {
+    liquid: water
+    amount: 0.1
+  }
+}
+requirements: [
+   copper/50
+   lead/70
+   graphite/50
+   metaglass/10
+]
+category: crafting
+research: kiln
+outputItem: ice/1

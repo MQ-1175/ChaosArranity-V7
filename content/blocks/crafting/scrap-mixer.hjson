@@ -1,0 +1,32 @@
+type: GenericSmelter
+name: Scrap Mixer
+description: Mixes water and titanium to make scrap.
+liquidCapacity: 50
+size: 2
+health: 220
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 10
+updateEffect: smeltsmoke
+outputItem: scrap/1
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+     titanium/2
+    ]
+  }
+  liquid: {
+    liquid: water
+    amount: 0.05
+  }
+}
+requirements: [
+  lead/200
+  copper/200
+  titanium/100
+  graphite/100
+]
+category: crafting
+research: separator

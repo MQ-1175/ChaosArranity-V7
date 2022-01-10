@@ -1,0 +1,17 @@
+type: LiquidRouter
+name: Adamantite Liquid Router
+description: A liquid router made out of adamantite. Very durable, but also expensive.
+size: 1
+researchCostMultiplier: 0.5
+health: 1500
+liquidCapacity: 30
+outlineColor: c30d40
+canOverdrive: false
+buildCostMultiplier: 0.5
+requirements: [
+     adamantite/3
+     metaglass/30
+]
+group: liquids
+category: liquid
+research: liquid-router

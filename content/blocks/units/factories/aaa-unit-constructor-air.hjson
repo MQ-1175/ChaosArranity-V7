@@ -1,0 +1,27 @@
+type: UnitFactory
+name: Chaos Unit Constructor: Air
+description: Produces units from chaos arranity and avoids conflict with other mods.
+health: 360
+size: 3
+requirements: [
+   copper/60
+   lead/70
+]
+
+plans: [
+    {
+        unit: t1-fireburster
+        requirements: [
+            silicon/30
+            lead/20
+        ]
+        time: 1200
+    }
+]
+
+
+category: units
+consumes: {
+    power:1.2
+}
+research: air-factory

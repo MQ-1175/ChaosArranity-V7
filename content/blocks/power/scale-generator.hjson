@@ -1,0 +1,26 @@
+type: SingleTypeGenerator
+name: Scale Generator
+description: Freezes scale, then shatters it to generate large amounts of power.
+size: 2
+hasPower: true
+hasItems: false
+hasLiquids: true
+powerProduction: 27.333333333333333333
+consumes: {
+  items: {
+    items: [
+          ice/2
+    ]
+  }
+  liquid: {
+    liquid: scale
+    amount: 0.03333333333333
+  }
+}
+requirements: [
+  silicon/150
+  lead/100
+  titanium/75
+]
+category: power
+research: differential-generator

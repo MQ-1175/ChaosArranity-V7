@@ -1,0 +1,28 @@
+type: GenericCrafter
+name: Coal Press
+description: Compresses scrap into coal.
+liquidCapacity: 20
+size: 2
+health: 220
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 10
+updateEffect: smeltsmoke
+consumes: {
+  power: 5
+  items: {
+    items: [
+     scrap/2
+    ]
+  }
+}
+requirements: [
+  copper/200
+  lead/200
+  silicon/50
+  graphite/50
+]
+category: crafting
+research: coal-centrifuge
+outputItem: coal/1

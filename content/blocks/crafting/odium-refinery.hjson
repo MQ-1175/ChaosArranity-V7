@@ -1,0 +1,27 @@
+type: GenericSmelter
+name: Odium Refinery
+description: Refines Odium with phase to maximize usage and utility.
+size: 2
+health: 185
+hasPower: true
+hasItems: true
+craftTime: 180
+updateEffect: smeltsmoke
+consumes: {
+  power: 5
+  items: {
+    items: [
+     phase-fabric/2
+     odium/1
+    ]
+  }
+}
+requirements: [
+  thorium/190
+  phase-fabric/90
+  lead/60
+  silicon/220
+]
+category: crafting
+research: odium-smelter
+outputItem: odium-refined/1

@@ -1,0 +1,120 @@
+type: ItemTurret
+name: Scatter MKII
+description: A better version of scatter that fires more ammo and has longer range.
+health: 1000
+size: 3
+reloadTime: 15
+shots: 1
+range: 240
+targetAir: true
+targetGround: false
+ammoUseEffect: casing1
+inaccuracy: 0
+rotateSpeed: 10
+coolantUsage: 0.5
+ammoTypes: {
+  lead: {
+    speed: 6
+    reloadMultiplier:2
+    damage: 9
+    width: 5
+    height: 5
+    collidesTiles: false
+    collidesGround: false
+    splashDamage: 20
+    splashDamageRadius: 24
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+}
+ ice: {
+    speed: 5
+    damage: 9
+    width: 5
+    height: 5
+    collidesTiles: false
+    collidesGround: false
+    frontColor: b7cbf4
+    backColor: 9db5e5
+    splashDamage: 10
+    splashDamageRadius: 24
+    fragBullets: 4
+    fragBullet: {
+        lifetime: 12
+        speed: 5
+        damage: 6
+        width: 5
+        height: 5
+        collidesTiles: false
+        collidesGround: false
+        frontColor: b7cbf4
+        backColor: 9db5e5
+    }
+ }
+ titanium: {
+    speed: 9
+    damage: 15
+    width: 10
+    height: 10
+    collidesTiles: false
+    collidesGround: false
+    splashDamage: 15
+    splashDamageRadius: 24
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+}
+ graphite: {
+    speed: 6
+    reloadMultiplier: 2
+    damage: 12
+    width: 5
+    height: 5
+    collidesTiles: false
+    collidesGround: false
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+  }
+ metaglass: {
+    speed: 7
+    reloadMultiplier: 1
+    damage: 12
+    width: 6
+    height: 6
+    collidesTiles: false
+    collidesGround: false
+    splashDamage: 15
+    splashDamageRadius: 24
+    fragBullets: 5
+    fragBullet: flakGlassFrag
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+  }
+ fireatite: {
+    speed: 8
+    damage: 30
+    ammoMultiplier: 2
+    width: 10
+    height: 10
+    collidesTiles: false
+    collidesGround: false
+    status: burning
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 2
+    splashDamage: 40
+    splashDamageRadius: 24
+    hitEffect: explosion
+    hitSound: boom
+    }
+}
+requirements: [
+  copper/150
+  lead/100
+  titanium/50
+  graphite/50
+]
+category: turret
+research: scatter

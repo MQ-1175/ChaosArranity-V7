@@ -1,0 +1,38 @@
+type: Reconstructor
+name: Multiplicative Adamantite Reconstructor
+description: Upgrades adamantite units to the third tier
+health: 9000
+size: 5
+researchCostMultiplier: 0.5
+itemCapacity: 1000
+constructTime: 23400
+upgrades: [
+    [t2-silo-array, t3-decimation],
+    [t2-evasculator, t3-blaster],
+    [t2-ravager, t3-abolisher],
+]
+consumes: {
+    power: 100
+    items: {
+        items: [
+	adamantite/400
+	surge-alloy/600
+	graphite/600
+	metaglass/500
+	silicon/490
+        ]
+    }
+  liquid: {
+    liquid: cryogenic-fluid
+    amount: 0.3
+  }
+}
+requirements: [
+    plastanium/600
+    graphite/800
+    surge-alloy/800
+    silicon/500
+    adamantite/270
+]
+category: units
+research: t2-additive-adamantite-reconstructor

@@ -1,0 +1,27 @@
+name: Adamantite Drill
+description: An adamantite based drill that can use scale to maximize efficiency.
+type: Drill
+health: 1200
+liquidCapacity: 6
+size: 3
+researchCostMultiplier: 0.5
+tier: 30
+drillTime: 20
+liquidBoostIntensity: 2
+consumes: {
+  power: 6
+  liquid: {
+    liquid: scale
+    amount: 0.4
+    booster: true
+    optional: true
+  }
+}
+requirements: [
+  adamantite/40
+  surge-alloy/160
+  metaglass/400
+  plastanium/400
+]
+category: production
+research: laser-drill

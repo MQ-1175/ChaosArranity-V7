@@ -1,0 +1,20 @@
+type: LiquidBridge
+name: Adamantite Bridge Conduit
+description: A form of bridge conduit that can transport lots of liquid over a very far distance.
+size: 1
+researchCostMultiplier: 0.5
+health: 2000
+liquidCapacity: 20
+outlineColor: c30d40
+canOverdrive: false
+buildCostMultiplier: 0.5
+requirements: [
+     adamantite/2
+     metaglass/100
+     phase-fabric/10
+]
+range: 20
+transportTime: 1
+group: liquids
+category: liquid
+research: phase-conduit
