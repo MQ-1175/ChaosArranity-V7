@@ -1,7 +1,7 @@
-const CAstatus = require("content/statusEffects");
-const CAitems = require("content/items");
-const recons = require("content/blocks/units");
-const Weapons = require("content/weapons");
+const CAstatus = require("content2/statusEffects");
+const CAitems = require("content2/items");
+const recons = require("content2/blocks/units");
+const Weapons = require("content2/weapons");
 
 // Core
 const delta = extend(UnitType, "delta", {
