@@ -1,14 +1,13 @@
 // Content
-require("content/blocks/environment");
-require("content/blocks/crafting");
-require("content/blocks/defense");
-require("content/blocks/effect");
-require("content/blocks/distribution");
-require("content/blocks/liquid");
-require("content/blocks/power");
-require("content/blocks/production");
-require("content/blocks/turrets");
-require("content/blocks/units");
+require("content/crafting");
+require("content/defense");
+require("content/effect");
+require("content/distribution");
+require("content/liquid");
+require("content/power");
+require("content/production");
+require("content/turrets");
+require("content/units");
 require("content/items");
 require("content/bullets");
 require("content/units");
