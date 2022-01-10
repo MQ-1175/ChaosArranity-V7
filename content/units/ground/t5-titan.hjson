@@ -1,0 +1,48 @@
+type: legs
+name: Titan
+description: A heavily enhanced reign, with two vela cannons to destroy enemy fortifications with ease. Not so great for fighting enemy units.
+speed: 0.2
+flying: false
+health: 20000
+armor: 10
+canDrown: false
+engineOffset: 5.5
+legLength: 20
+legPairOffset: 6
+legSplashDamage: 80
+legSplashRange: 40
+range: 500
+hitSize: 30
+accel: 10
+weapons: [
+{
+  name: titan-weapon
+  y: 6
+  x: 24
+  shootY: 10
+  reload: 120
+  alternate: false
+  continuous: true
+  bullet: {
+      type: ContinuousLaserBulletType
+      lifetime: 120
+      damage: 35
+      buildingDamageMultiplier: 3
+      length: 125
+      width: 8
+  }
+  shootSound: laserbig
+}
+]
+
+research: {
+    parent: t4-arcaster
+    requirements:
+    [
+        {item: copper, amount: 3000},
+        {item: thorium, amount: 2500},
+        {item: surge-alloy, amount: 1000},
+        {item: silicon, amount: 2800},
+        {item: graphite, amount: 2000}
+    ]
+}

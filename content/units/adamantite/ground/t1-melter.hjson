@@ -1,0 +1,54 @@
+type: legs
+name: Melter
+description: Fires orbs of superheated slag, causing massive damage. Heavily armored.
+speed: 0.4
+canDrown: false
+buildSpeed: 3
+mineSpeed: 6
+mineTier: 3
+itemCapacity: 80
+commandLimit: 10
+hitSize: 20
+accel: 10
+flying: false
+health: 40000
+armor: 160
+weapons: [
+{
+  name: melter-weapon
+  y: 0
+  x: 12
+  shootY: 10
+  reload: 10
+  alternate: false
+  recoil: 4
+  ejectEffect: none
+  shootSound: spray
+  bullet: {
+      type: LiquidBulletType
+      liquid: slag
+      damage: 250
+      drag: 0.03
+      buildingDamageMultiplier: 1.2
+      statusDuration: 600
+      status: {
+         name: overheating
+         damage: 0.4
+         color: FF8800
+         effect: fire
+      }
+  }
+}
+]
+
+research: {
+    parent: t1-adamantite-unit-constructor
+    requirements:
+    [
+        {item: surge-alloy, amount: 5000},
+        {item: plastanium, amount: 10000},
+        {item: adamantite, amount: 50},
+        {item: thorium, amount: 10000},
+        {item: silicon, amount: 10000}
+    ]
+}

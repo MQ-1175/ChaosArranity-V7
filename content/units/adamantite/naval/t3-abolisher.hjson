@@ -1,0 +1,71 @@
+type: naval
+name: Abolisher
+description: Has a massive fire mortar that launches a shell that causes massive fires and has small little weapons to defend itself aswell. Constructs firebursters.
+speed: 0.9
+commandLimit: 10
+buildSpeed: 4
+mineSpeed: 10
+mineTier: 5
+itemCapacity: 120
+flying: false
+health: 100000
+armor: 160
+weapons: [
+{
+  name: abolisher-mortar
+  y: -5
+  x: 0
+  reload: 420
+  alternate: false
+  rotate: true
+  mirror: false
+  shootSound: artillery
+  shake: 6
+  bullet: {
+   type: ArtilleryBulletType
+   width: 20
+   height: 20
+   speed: 4
+   lifetime: 80
+   damage: 0
+   buildingDamageMultiplier: 2.5
+   splashDamage: 2000
+   splashDamageRadius: 64
+   fragBullet: fireball
+   fragBullets: 128
+   hitEffect: massiveExplosion
+  }
+}
+{
+  name: abolisher-gun
+  y: 0
+  x: 14
+  reload: 15
+  alternate: true
+  mirror: true
+  rotate: true
+  inaccuracy: 1
+  ejectEffect: none
+  shootSound: lasershoot
+  bullet: {
+   width: 12
+   height: 12
+   speed: 5
+   lifetime: 32
+   damage: 500
+   buildingDamageMultiplier: 0.9
+  }
+}
+]
+
+research: {
+    parent: t3-multiplicative-adamantite-reconstructor
+    requirements:
+    [
+        {item: surge-alloy, amount: 9000},
+        {item: plastanium, amount: 18000},
+        {item: adamantite, amount: 150},
+        {item: thorium, amount: 18000},
+        {item: silicon, amount: 18000}
+    ]
+}

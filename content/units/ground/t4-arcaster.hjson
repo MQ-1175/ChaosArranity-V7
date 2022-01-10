@@ -1,0 +1,41 @@
+type: mech
+name: Arcaster
+description: Fires arcs at nearby threats.
+speed: 0.3
+flying: false
+health: 7500
+canBoost: true
+engineSize: 6
+boostMultiplier: 2
+armor: 7
+engineOffset: 6.5
+range: 80
+hitSize: 15
+weapons: [
+ {
+  name: arcasting
+  y: 3
+  x: 10
+  reload: 7
+  shootSound: bigshot
+  alternate: true
+  bullet: {
+     type: LightningBulletType
+     damage: 35
+     lightningLength: 16
+     buildingDamageMultiplier: 0.25
+   }
+}
+]
+
+research: {
+    parent: t3-relametion
+    requirements:
+    [
+        {item: copper, amount: 3000},
+        {item: lead, amount: 2500},
+        {item: plastanium, amount: 2000},
+        {item: silicon, amount: 2800},
+        {item: graphite, amount: 2000}
+    ]
+}

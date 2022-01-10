@@ -1,0 +1,52 @@
+type: flying
+name:  Delta
+description: Defends the Mega core from enemies. Builds structures. Capable of picking up payloads. Able to heal itself and nearby allies.
+speed: 4 
+accel: 0.1
+drag: 0.05
+flying: true
+health: 400
+armor: 8
+commandLimit: 8
+payloadCapacity: 384
+isCounted: false
+buildSpeed: 4
+mineSpeed: 10
+mineTier: 3
+itemCapacity: 100
+engineOffset: 9
+engineSize: 4
+hitSize: 18
+weapons: [
+{
+  name: heal-launcher
+  y: 0
+  x: 9
+  reload: 7.5
+  inaccuracy: 0
+  shots: 2
+  rotate: false
+  alternate: true
+  shootSound: missile
+  ejectEffect: none
+  bullet: {
+      type: MissileBulletType
+      sprite: chaos-arranity-missile-small
+      frontColor: ffd2ae
+      backColor: ffd2ae
+      trailColor: ffd2ae
+      speed: 5
+      damage: 11
+      buildingDamageMultiplier: 0.01
+      homingPower: 0.2
+      homingRange: 48
+      healPercent: 1
+      collidesTeam: true
+      shrinkY: 0
+      width: 10
+      height: 10
+      weaveScale: 2
+      weaveMag: 2
+  }
+}
+]

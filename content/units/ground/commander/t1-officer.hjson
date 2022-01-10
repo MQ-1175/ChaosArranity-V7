@@ -1,0 +1,48 @@
+type: mech
+name: Officer
+description: Commands large amounts of allies. Heals allies. Sprays water at nearby enemies to slow them down and knock them back.
+speed: 1
+accel: 0.1
+drag: 0.1
+flying: false
+health: 300
+canBoost: true
+commandLimit: 8
+itemCapacity: 60
+boostMultiplier: 1.5
+engineOffset: 5.5
+mineTier: 2
+mineSpeed: 2
+buildSpeed: 0.5
+hitSize: 10
+weapons: [
+{
+  name: water-gun
+  y: 0
+  x: 6
+  reload: 2
+  shootSound: spray
+  alternate: false
+  inaccuracy: 6
+  bullet: {
+    type: LiquidBulletType
+    liquid: water
+    speed: 2
+    lifetime: 120
+    damage: 0.1
+    knockback: 0.5
+    status: wet
+    statusDuration: 300
+}
+}
+]
+
+research: {
+    parent: crawler
+    requirements:
+    [
+        {item: copper, amount: 2000},
+        {item: silicon, amount: 1000},
+        {item: odium, amount: 200}
+    ]
+}

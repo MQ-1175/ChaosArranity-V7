@@ -1,0 +1,91 @@
+type: naval
+name: Warmonger
+description: Fires high damaging peircing bullets at enemies. Has an enhanced lancer to start fires.
+speed: 0.5
+commandLimit: 10
+buildSpeed: 4
+mineSpeed: 10
+mineTier: 6
+itemCapacity: 150
+flying: false
+hitSize: 20
+health: 140000
+armor: 195
+weapons: [
+{
+  name: warmonger-guns
+  y: 10
+  x: 14
+  reload: 30
+  alternate: true
+  rotate: true
+  mirror: true
+  shootSound: artillery
+  shake: 2
+  bullet: {
+   width: 10
+   height: 10
+   speed: 4
+   lifetime: 85
+   pierce: true
+   pierceCap: 5
+   damage: 600
+  }
+}
+{
+  name: warmonger-guns
+  y: -15
+  x: 7
+  reload: 20
+  alternate: true
+  rotate: true
+  mirror: true
+  shootSound: bang
+  shake: 2
+  bullet: {
+   width: 10
+   height: 10
+   speed: 4
+   lifetime: 85
+   pierce: true
+   pierceCap: 5
+   damage: 500
+  }
+}
+{
+  name: destruction-lancer
+  y: 0
+  x: 0
+  reload: 15
+  mirror: false
+  rotate: true
+  ejectEffect: none
+  shootSound: laser
+  bullet: {
+  type: LaserBulletType
+   width: 24
+   length: 80
+   lifetime: 30
+   damage: 300
+   status: burning
+   makeFire: true
+   buildingDamageMultiplier: 1.2
+   incendChance: 1
+   incendSpread: 5
+   incendAmount: 1
+   colors: [ED922A, FFAF32, FFCC3B]
+  }
+}
+]
+
+research: {
+    parent: t4-exponential-adamantite-reconstructor
+    requirements:
+    [
+        {item: surge-alloy, amount: 12000},
+        {item: plastanium, amount: 20000},
+        {item: adamantite, amount: 200},
+        {item: thorium, amount: 20000},
+        {item: silicon, amount: 20000}
+    ]
+}

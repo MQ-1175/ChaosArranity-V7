@@ -1,0 +1,60 @@
+type: mech
+name: Director
+description: Commands large amounts of allies. Heals and boosts allies. Fires salvos of low damage missiles. Shielded. Builds Crawlers.
+speed: 0.5
+accel: 0.1
+drag: 0.1
+flying: false
+health: 9000
+armor: 11
+canBoost: true
+commandLimit: 14
+itemCapacity: 150
+boostMultiplier: 1.5
+engineOffset: 5.5
+mineTier: 3
+mineSpeed: 4
+buildSpeed: 1.25
+hitSize: 30
+weapons: [
+{
+  name: director-arm
+  y: 0
+  x: 18
+  shootY: 10
+  reload: 180
+  shots: 6
+  shotDelay: 6
+  spacing: 3
+  inaccuracy: 2
+  shootSound: missile
+  alternate: true
+  bullet: {
+    type: MissileBulletType
+    speed: 4
+    damage: 0
+    lifetime: 36
+    width: 8
+    height: 8
+    shrinkY: 0
+    splashDamage: 4
+    splashDamageRadius: 16
+    homingPower: 0.1
+    homingRange: 50
+    hitEffect: blastExplosion
+    despawnEffect: blastExplosion
+}
+}
+]
+
+research: {
+    parent: t3-manager
+    requirements:
+    [
+        {item: copper, amount: 5000},
+        {item: lead, amount: 4000},
+        {item: silicon, amount: 2400},
+        {item: graphite, amount: 1600},
+        {item: odium, amount: 650}
+    ]
+}

@@ -1,0 +1,109 @@
+type: flying
+name: Ignition
+description: Starts massive fires with its barrage of weapons. Weaker than other tier 5 units, but much faster.
+speed: 1.5
+accel: 0.08
+drag: 0.08
+flying: true
+health: 15000
+armor: 20
+rotateSpeed: 4
+faceTarget: true
+lowAltitude: true
+engineOffset: 43
+engineSize: 2
+hitSize: 35
+weapons: [
+{
+  name: ignition-rockets
+  x: 12
+  y: 8
+  reload: 30
+  rotate: false
+  alternate: false
+  mirror: true
+  shootSound: missile
+  ejectEffect: none
+  bullet: {
+    type: MissileBulletType
+    sprite: chaos-arranity-mk2-missile
+    frontColor: FFAA5F
+    backColor: FFAA5F
+    trailColor: FFAA5F
+    speed: 5
+    damage: 0
+    lifetime: 40
+    width: 10
+    height: 10
+    splashDamage: 35
+    splashDamageRadius: 40
+    status: burning
+    makeFire: true
+    incendAmount: 1
+    fragBullets: 4
+    fragBullet: fireball
+    hitEffect: blastExplosion
+    despawnEffect: blastExplosion
+}
+}
+{
+  name: ignition-gun
+  x: 4
+  y: 22
+  reload: 15
+  rotate: false
+  alternate: true
+  mirror: true
+  recoil: 0
+  shootSound: bang
+  bullet: {
+    speed: 5
+    damage: 20
+    buildingDamageMultiplier: 1.2
+    lifetime: 40
+    width: 10
+    height: 10
+    status: burning
+    makeFire: true
+    incendAmount: 1
+    fragBullet: fireball
+    fragBullets: 3
+}
+}
+{
+  name: ignition-cannon
+  x: 8
+  y: 17
+  reload: 120
+  rotate: false
+  alternate: true
+  mirror: true
+  shootSound: bang
+  bullet: {
+    type: ArtilleryBulletType
+    speed: 5
+    damage: 0
+    lifetime: 40
+    width: 6
+    height: 6
+    splashDamage: 40
+    splashDamageRadius: 24
+    status: burning
+    makeFire: true
+    incendAmount: 1
+    fragBullet: fireball
+    fragBullets: 16
+}
+}
+]
+
+research: {
+    parent: t4-ffa
+    requirements:
+    [
+        {item: copper, amount: 10000},
+        {item: silicon, amount: 5000},
+        {item: graphite, amount: 3500},
+        {item: fireatite, amount: 250}
+    ]
+}

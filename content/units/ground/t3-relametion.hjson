@@ -1,0 +1,58 @@
+type: mech
+name: Relametion
+description: Fires homing missles filled with slag.
+speed: 0.4
+accel: 5
+drag: 0.4
+flying: false
+health: 800
+armor: 4
+engineOffset: 5.5
+commandLimit: 6
+range: 120
+hitSize: 15
+weapons: [{
+  name: rocket-gun
+  y: 2
+  x: 8
+  reload: 28
+  shootSound: bigshot
+  alternate: true
+  bullet: {
+     type: MissileBulletType
+     speed: 4
+     width: 8
+     height: 6
+     shrinkY: 0
+     drag: -0.01
+     damage: 0
+     splashDamageRadius: 30
+     splashDamage: 32
+     ammoMultiplier: 4
+     hitEffect: blastExplosion
+     despawnEffect: blastExplosion
+     status: blasted
+     statusDuration: 60
+     fragBullets: 8
+     fragBullet: {
+        type: LiquidBulletType
+        damage: 10
+        status: burning
+        speed: 2
+        lifetime: 10
+        liquid: slag
+     }
+  }
+}]
+
+research: {
+    parent: t2-marginator
+    requirements:
+    [
+        {item: copper, amount: 2800},
+        {item: lead, amount: 2000},
+        {item: titanium, amount: 1500},
+        {item: silicon, amount: 2400},
+        {item: graphite, amount: 1500}
+    ]
+}

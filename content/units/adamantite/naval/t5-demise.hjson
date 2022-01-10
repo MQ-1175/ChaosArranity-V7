@@ -1,0 +1,100 @@
+type: naval
+name: Demise
+description: A naval battleship armed to the brim wth adamantite armor and weapons. Constructs Flares at an extreme rate.
+speed: 2
+commandLimit: 10
+buildSpeed: 5
+mineSpeed: 16
+mineTier: 8
+itemCapacity: 250
+flying: false
+range: 400
+health: 180000
+armor: 230
+weapons: [
+{
+  name: adamantite-cyclone
+  y: -6
+  x: 18
+  reload: 3
+  alternate: true
+  rotate: true
+  inaccuracy: 8
+  bullet: {
+   width: 10
+   height: 10
+   speed: 5
+   pierce: true
+   pierceCap: 5
+   fragBullets: 5
+   fragBullet: fragPlasticFrag
+   lifetime: 40
+   damage: 350
+  }
+  shootSound: bang
+}
+{
+  name: adamantite-fuse
+  x: 0
+  y: 20
+  shootY: 8
+  shots: 3
+  recoil: 3
+  spacing: 18
+  reload: 60
+  rotate: true
+  alternate: false
+  mirror:false
+  bullet: {
+      type: ShrapnelBulletType
+      length: 20
+      width: 12
+      speed: 0.01
+      lifetime: 16
+      pierce: true
+      damage: 600
+      toColor: C40D30
+   }
+  shootSound: shotgun
+}
+{
+  name: demise-rail
+  x: 0
+  y: -8
+  shootY: 23
+  reload: 110
+  shake: 4
+  rotate: true
+  rotateSpeed: 5
+  alternate: false
+  mirror:false
+  shadow: 50
+  bullet: {
+      type: RailBulletType
+      length: 400
+      damage: 1500
+      shootEffect: railShoot
+      updateEffectSeg: 60
+      pierceEffect: railHit
+      updateEffect: railTrail
+      hitEffect: massiveExplosion
+      smokeEffect: shootBig2
+      pierceDamageFactor: 0.6
+   }
+  shootSound: catalyst
+}
+]
+
+research: {
+    parent: t5-tetrative-adamantite-reconstructor
+    requirements:
+    [
+        {item: surge-alloy, amount: 15000},
+        {item: plastanium, amount: 20000},
+        {item: adamantite, amount: 250},
+        {item: thorium, amount: 25000},
+        {item: silicon, amount: 25000},
+        {item: graphite, amount: 10000}
+    ]
+}
+

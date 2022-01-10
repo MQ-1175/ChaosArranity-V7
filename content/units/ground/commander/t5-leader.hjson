@@ -1,0 +1,48 @@
+type: mech
+name: Leader
+description: Commands a massive amount of allies. Heals and boosts allies. Shielded.
+speed: 0.4
+accel: 0.1
+drag: 0.1
+flying: false
+health: 24000
+armor: 15
+canBoost: true
+commandLimit: 15
+itemCapacity: 180
+boostMultiplier: 1.5
+engineOffset: 5.5
+mineTier: 3
+mineSpeed: 5
+buildSpeed: 1.25
+hitSize: 35
+weapons: [
+{
+  name: leader-cannon
+  y: 0
+  x: 28
+  shootY: 10
+  reload: 30
+  shootSound: bang
+  alternate: true
+  bullet: {
+    speed: 4
+    damage: 20
+    lifetime: 40
+    width: 12
+    height: 12
+}
+}
+]
+
+research: {
+    parent: t4-director
+    requirements:
+    [
+        {item: copper, amount: 5000},
+        {item: lead, amount: 4000},
+        {item: silicon, amount: 2400},
+        {item: graphite, amount: 1600},
+        {item: odium-refined, amount: 650}
+    ]
+}

@@ -1,0 +1,44 @@
+type: mech
+name: Marginator
+description: Basic ground unit that fires incendiary bullets at nearby threats.
+speed: 0.4
+accel: 1.75
+drag: 0.4
+flying: false
+health: 450
+armor: 1
+engineOffset: 5.5
+range: 80
+hitSize: 10
+weapons: [
+{
+  name: dagger-gun
+  y: -1
+  x: 7
+  reload: 14
+  shootSound: pew
+  alternate: true
+  bullet: {
+     width: 10
+     height: 12
+     speed: 3
+     frontColor: FFAA5F
+     backColor: FFAA5F
+     damage: 18
+     status: burning
+     makeFire: true
+     inaccuracy: 3
+     lifetime: 60
+  }
+}
+]
+
+research: {
+    parent: t1-dalish
+    requirements:
+    [
+        {item: copper, amount: 2600},
+        {item: silicon, amount: 2000},
+        {item: graphite, amount: 1000}
+    ]
+}

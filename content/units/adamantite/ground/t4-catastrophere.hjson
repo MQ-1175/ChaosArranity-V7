@@ -1,0 +1,78 @@
+type: legs
+name: Catastrophere
+description: Fires a massive barrage of high damaging bullets, and has a hail mounted on for extra damage.
+speed: 0.3
+canDrown: false
+buildSpeed: 3
+mineSpeed: 6
+mineTier: 3
+itemCapacity: 150
+commandLimit: 10
+hitSize: 25
+legLength: 16
+accel: 10
+flying: false
+health: 140000
+armor: 98
+weapons: [
+{
+  name: catastrophere-cannon
+  y: 5
+  x: 30
+  reload: 30
+  alternate: true
+  shots: 4
+  shotDelay: 5
+  recoil: 3
+  ejectEffect: none
+  shootSound: bang
+  bullet: {
+      speed: 8
+      width: 20
+      height: 20
+      lifetime: 80
+      damage: 400
+   }
+}
+{
+  name: catastrophere-turret
+  y: -10
+  x: 16
+  reload: 60
+  alternate: false
+  rotate: true
+  recoil: 4
+  ejectEffect: none
+  bullet: {
+      frontColor: FFAA5F
+      backColor: FFAA5F
+      speed: 5
+      width: 15
+      height: 15
+      lifetime: 60
+      damage: 50
+      statusDuration: 600
+      makeFire: true
+      homingPower: 5
+      homingRange: 36
+      status: {
+         name: heated
+         damage: 0.6
+         color: FFAA5F
+         effect: mine
+      }
+   }
+}
+]
+
+research: {
+    parent: t4-exponential-adamantite-reconstructor
+    requirements:
+    [
+        {item: surge-alloy, amount: 12000},
+        {item: plastanium, amount: 20000},
+        {item: adamantite, amount: 200},
+        {item: thorium, amount: 20000},
+        {item: silicon, amount: 20000}
+    ]
+}

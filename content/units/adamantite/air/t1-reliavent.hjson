@@ -1,0 +1,56 @@
+type: flying
+name: Reliavent
+description: Drops a massive payload of incendiary bombs that start massive fires.
+speed: 1.9
+buildSpeed: 3
+mineSpeed: 8
+mineTier: 4
+itemCapacity: 80
+circleTarget: true
+rotateShooting: false
+maxRange: 8
+commandLimit: 10
+flying: true
+range: 100
+health: 40000
+armor: 156
+weapons: [
+{
+  name: reliavent-bombs
+  y: 0
+  reload: 4
+  alternate: false
+  rotate: true
+  inaccuracy: 0
+  bullet: {
+   type: BombBulletType
+   width: 16
+   height: 16
+   keepVelocity: false
+   speed: 0
+   lifetime: 60
+   damage: 0
+   buildingDamageMultiplier: 1.2
+   status: burning
+   despawnEffect: explosion
+   splashDamage: 110
+   splashDamageRadius: 36
+   hitSound: explosion
+   fragBullets: 20
+   fragBullet: fireball
+}
+  shootSound: none
+}
+]
+
+research: {
+    parent: t1-adamantite-unit-constructor
+    requirements:
+    [
+        {item: surge-alloy, amount: 5000},
+        {item: plastanium, amount: 10000},
+        {item: adamantite, amount: 50},
+        {item: thorium, amount: 10000},
+        {item: silicon, amount: 10000}
+    ]
+}

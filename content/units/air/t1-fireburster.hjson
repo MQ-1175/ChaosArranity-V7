@@ -1,0 +1,47 @@
+type: flying
+name: Fireburster Fighter
+description: A flying mace, but weaker and cheaper.
+speed: 1.7
+flying: true
+health: 220
+armor: 2
+commandLimit: 6
+engineOffset: 5.5
+hitSize: 8
+weapons: [
+{
+  name: flamethrower
+  y: 0
+  x: 4
+  shootY: 2
+  reload: 14
+  shootSound: flame
+  ejectEffect: none
+  bullet: {
+    speed: 4
+    damage: 20
+    hitSize: 7
+    lifetime: 12
+    width: 1
+    height: 1
+    pierce: true
+    statusDuration: 240
+    shootEffect: shootSmallFlame
+    hitEffect: hitFlameSmall
+    despawnEffect: none
+    status: burning
+    keepVelocity: false
+    hittable: false
+}
+}
+]
+
+research: {
+    parent: flare
+    requirements:
+    [
+        {item: copper, amount: 2000},
+        {item: silicon, amount: 1000},
+        {item: coal, amount: 100}
+    ]
+}

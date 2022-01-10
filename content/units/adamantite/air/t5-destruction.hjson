@@ -1,0 +1,306 @@
+type: flying
+name: Destruction
+description: Has an absurd amount of weaponry to take down any type of enemy possible.
+speed: 3
+drag: 20
+engineOffset: 30
+engineSize: 15
+flying: true
+commandLimit: 10
+buildSpeed: 5
+mineSpeed: 16
+mineTier: 8
+itemCapacity: 250
+hitSize: 50
+faceTarget: true
+range: 80
+health: 180000
+armor: 196
+weapons: [
+{
+  name: heavy-cannon
+  x: 30
+  y: 0
+  recoil: 3
+  reload: 15
+  rotate: true
+  rotateSpeed: 0.001
+  shootCone: 30
+  alternate: true
+  mirror: true
+  bullet: {
+      speed: 6
+      width: 11
+      height: 14
+      lifetime: 60
+      damage: 660
+   }
+  shootSound: shootBig
+}
+{
+  name: adamantite-cyclone
+  x: 15
+  y: 15
+  recoil: 3
+  reload: 3
+  rotate: true
+  alternate: false
+  mirror: true
+  bullet: {
+      speed: 5
+      width: 9
+      height: 12
+      lifetime: 30
+      damage: 60
+      fragBullets: 5
+      fragBullet: fragGlassFrag
+   }
+  shootSound: bang
+}
+{
+  name: vaporizer
+  x: 0
+  y: 6
+  recoil: 6
+  reload: 180
+  rotate: false
+  shootCone: 20
+  rotateSpeed: 10
+  continuous: true
+  mirror: false
+  cooldownTime: 30
+  bullet: {
+      type: ContinuousLaserBulletType
+      damage: 300
+      length: 120
+      lifetime: 300
+   }
+   shootSound: laserbig
+}
+{
+  name: destruction-rockets
+  x: 20
+  y: -33
+  recoil: 2
+  reload: 30
+  shots: 6
+  shotDelay: 4
+  xRand: 4
+  rotate: true
+  alternate: false
+  mirror: true
+  bullet: {
+      type: MissileBulletType
+      sprite: chaos-arranity-mk2-missile
+      frontColor: FFAA5F
+      backColor: FFAA5F
+      trailColor: FFAA5F
+      hitEffect: blastExplosion
+      speed: 5
+      lifetime: 60
+      damage: 0
+      splashDamage: 200
+      splashDamageRadius: 32
+      homingPower: 1
+      homingRange: 64
+      status: burning
+      shrinkY: 0
+      width: 10
+      height: 10
+      weaveScale: 0
+      weaveMag: -1
+   }
+  shootSound: missile
+}
+{
+  name: destruction-launcher
+  x: 12
+  y: 26
+  recoil: 3
+  reload: 60
+  rotate: true
+  alternate: false
+  mirror: true
+  bullet: {
+      sprite: chaos-arranity-energy-orb
+      frontColor: 665C9F
+      backColor: BF92F9
+      speed: 4
+      width: 15
+      height: 15
+      lifetime: 50
+      damage: 225
+      status: burning
+      splashDamage: 200
+      splashDamageRadius: 64
+      fragBullets: 14
+      fragBullet: {
+         sprite: chaos-arranity-energy-orb
+         frontColor: 665C9F
+         backColor: BF92F9
+         speed: 4
+         width: 10
+         height: 10
+         lifetime: 25
+         damage: 150
+      
+      }
+   }
+  shootSound: bang
+}
+{
+  name: destruction-lancer
+  x: 20
+  y: 0
+  reload: 60
+  rotate: true
+  alternate: false
+  bullet: {
+      type: LaserBulletType
+      lifetime: 10
+      damage: 100
+      length: 120
+      lightColor: ff002b
+   }
+  shootSound: laser
+}
+{
+  name: destruction-lancer
+  x: 0
+  y: 0
+  reload: 60
+  rotate: true
+  alternate: false
+  mirror: false
+  bullet: {
+      type: LaserBulletType
+      lifetime: 10
+      damage: 120
+      length: 100
+      lightColor: C40D30
+   }
+  shootSound: laser
+}
+{
+  name: destruction-peashooter
+  x: 0
+  y: -20
+  reload: 60
+  rotate: true
+  alternate: false
+  mirror: false
+  bullet: {
+      speed: 5
+      width: 10
+      height: 10
+      lifetime: 60
+      damage: 20
+   }
+  shootSound: bang
+}
+{
+  name: destruction-peashooter
+  x: 18
+  y: -20
+  reload: 60
+  rotate: true
+  alternate: false
+  mirror: false
+  bullet: {
+      speed: 5
+      width: 10
+      height: 10
+      lifetime: 60
+      damage: 20
+   }
+  shootSound: bang
+}
+{
+  name: destruction-peashooter
+  x: -18
+  y: -20
+  reload: 30
+  rotate: true
+  alternate: false
+  mirror: false
+  bullet: {
+      speed: 5
+      width: 10
+      height: 10
+      lifetime: 60
+      damage: 20
+   }
+  shootSound: bang
+}
+{
+  name: destruction-hail
+  x: 25
+  y: -16
+  reload: 30
+  rotate: true
+  alternate: true
+  mirror: true
+  bullet: {
+      speed: 6
+      width: 10
+      height: 10
+      lifetime: 70
+      damage: 0
+      splashDamage: 100
+      splashDamageRadius: 32
+   }
+  shootSound: bang
+}
+{
+  name: destruction-scatter
+  x: 7
+  y: -36
+  reload: 10
+  rotate: true
+  alternate: true
+  mirror: true
+  inaccuracy: 7
+  bullet: {
+      speed: 5
+      width: 8
+      height: 10
+      lifetime: 35
+      damage: 30
+      fragBullets: 3
+      fragBullet: fragGlassFrag
+   }
+  shootSound: shootSnap
+}
+{
+  name: destruction-scatter
+  x: 0
+  y: -11
+  reload: 10
+  rotate: true
+  mirror: false
+  inaccuracy: 7
+  bullet: {
+      speed: 5
+      width: 8
+      height: 10
+      lifetime: 35
+      damage: 50
+      fragBullets: 3
+      fragBullet: fragGlassFrag
+   }
+  shootSound: shootSnap
+}
+]
+
+research: {
+    parent: t5-tetrative-adamantite-reconstructor
+    requirements:
+    [
+        {item: surge-alloy, amount: 15000},
+        {item: plastanium, amount: 20000},
+        {item: adamantite, amount: 250},
+        {item: thorium, amount: 25000},
+        {item: silicon, amount: 25000},
+        {item: graphite, amount: 10000}
+    ]
+}

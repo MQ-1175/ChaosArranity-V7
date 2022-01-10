@@ -1,0 +1,60 @@
+type: mech
+name: Manager
+description: Commands large amounts of allies. Heals and boosts allies. Fires low damage projectiles.
+speed: 0.6
+accel: 0.1
+drag: 0.1
+flying: false
+health: 900
+armor: 7
+canBoost: true
+commandLimit: 12
+itemCapacity: 120
+boostMultiplier: 1.5
+engineOffset: 5.5
+mineTier: 3
+mineSpeed: 2.75
+buildSpeed: 1.0
+hitSize: 17
+weapons: [
+{
+  name: manager-weapon
+  y: 0
+  x: 14
+  reload: 60
+  shootSound: bang
+  alternate: false
+  bullet: {
+    speed: 6
+    width: 10
+    height: 10
+    lifetime: 20
+    damage:8
+    fragBullet: fragGlassFrag
+}
+}
+{
+  name: manager-gun
+  y: -6
+  x: 4
+  reload: 15
+  shootSound: bang
+  mirror: true
+  bullet: {
+    speed: 4
+    lifetime: 24
+    damage: 3
+}
+}
+]
+
+research: {
+    parent: t2-chief
+    requirements:
+    [
+        {item: copper, amount: 4000},
+        {item: lead, amount: 2000},
+        {item: silicon, amount: 1800},
+        {item: odium, amount: 650}
+    ]
+}

@@ -1,0 +1,39 @@
+type: mech
+name: Dalish
+description: An annoying extremely fast tiny ground unit. Very weak, but extremely high rate of fire. Capable of flight.
+speed: 3
+accel: 1.75
+drag: 0.4
+flying: false
+health: 25
+canBoost: true
+boostMultiplier: 2
+engineOffset: 5.5
+range: 40
+hitSize: 5
+weapons: [
+{
+  name: mini-cannon
+  y: 0
+  x: 4
+  reload: 1
+  shootSound: pew
+  alternate: false
+  inaccuracy: 12
+  bullet: {
+    speed: 3
+    damage: 3
+    width: 5
+    height: 5
+}
+}
+]
+
+research: {
+    parent: dagger
+    requirements:
+    [
+        {item: copper, amount: 2000},
+        {item: silicon, amount: 1000}
+    ]
+}

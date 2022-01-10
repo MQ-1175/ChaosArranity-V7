@@ -1,0 +1,48 @@
+type: legs
+name: Evasculator
+description: Fires a barrage of high damaging rounds at enemies.
+speed: 0.3
+canDrown: false
+buildSpeed: 3
+mineSpeed: 6
+mineTier: 3
+itemCapacity: 100
+commandLimit: 10
+hitSize: 20
+accel: 10
+flying: false
+health: 72000
+armor: 134
+weapons: [
+{
+  name: evasculator-weapon
+  y: 0
+  x: 10
+  shootY: 10
+  reload: 15
+  alternate: true
+  recoil: 3
+  shots: 4
+  shotDelay: 3
+  ejectEffect: none
+  bullet: {
+      speed: 6
+      width: 9
+      height: 9
+      lifetime: 50
+      damage: 120
+   }
+}
+]
+
+research: {
+    parent: t2-additive-adamantite-reconstructor
+    requirements:
+    [
+        {item: surge-alloy, amount: 7000},
+        {item: plastanium, amount: 15000},
+        {item: adamantite, amount: 100},
+        {item: thorium, amount: 15000},
+        {item: silicon, amount: 15000}
+    ]
+}

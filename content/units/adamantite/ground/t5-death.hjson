@@ -1,0 +1,112 @@
+type: legs
+name: Death
+description: Has a laser beam that demolishes any enemy threat within range, along with other defences to prevent flanking.
+speed: 0.25
+buildSpeed: 3
+mineSpeed: 8
+mineTier: 3
+itemCapacity: 200
+commandLimit: 10
+canDrown: false
+hitSize: 50
+legLength: 20
+legSplashDamage: 20
+accel: 10
+flying: false
+health: 180000
+armor: 220
+weapons: [
+{
+  name: main-laser
+  x: 0
+  y: 8
+  shootY: 12
+  recoil: 6
+  reload: 420
+  rotate: false
+  rotateSpeed: 1
+  firstShotDelay: 166
+  shotDelay: 166
+  continuous: true
+  mirror: false
+  shake: 8
+  cooldownTime: 40
+  bullet: {
+      type: ContinuousLaserBulletType
+      damage: 10000
+      length: 200
+      width: 18
+      lifetime: 300
+      shootEffect: lancerLaserCharge
+      status: {
+         name: obliterating
+         damage: 0.1666666666666666
+         damageMultiplier: 0.8
+         speedMultiplier: 0.5
+         color: FFFFFF
+         effect: mineHuge
+      }
+   }
+   shootSound: vaporizerShoot
+   chargeSound: deathlasercharge
+}
+{
+  name: adamantite-cyclone
+  x: 0
+  y: -10
+  recoil: 3
+  reload: 5
+  rotate: true
+  alternate: false
+  mirror: false
+  shake: 3
+  bullet: {
+      speed: 6
+      width: 9
+      height: 12
+      lifetime: 80
+      damage: 60
+      fragBullets: 2
+      fragBullet: fragGlass
+   }
+  shootSound: bang
+}
+{
+  name: adamantite-fuse
+  x: 20
+  y: 0
+  shootY: 8
+  shots: 3
+  recoil: 3
+  spacing: 18
+  reload: 30
+  rotate: true
+  alternate: false
+  mirror:true
+  shake: 4
+  bullet: {
+      type: ShrapnelBulletType
+      length: 20
+      width: 12
+      speed: 0.01
+      lifetime: 16
+      pierce: true
+      damage: 550
+      toColor: C40D30
+   }
+  shootSound: shotgun
+}
+]
+
+research: {
+    parent: t5-tetrative-adamantite-reconstructor
+    requirements:
+    [
+        {item: surge-alloy, amount: 15000},
+        {item: plastanium, amount: 20000},
+        {item: adamantite, amount: 250},
+        {item: thorium, amount: 25000},
+        {item: silicon, amount: 25000},
+        {item: graphite, amount: 10000}
+    ]
+}

@@ -1,0 +1,7 @@
+name: Fireatite
+description: An extremely flammable and explosive substance. Handle with extreme care.
+flammability: 4
+radioactivity: 0
+explosiveness: 7
+color: FF3232
+hardness: 4

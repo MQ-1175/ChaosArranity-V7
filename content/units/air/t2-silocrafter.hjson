@@ -1,0 +1,54 @@
+type: flying
+name:  Silocrafter
+description: Fires a barrage of missles.
+speed: 1.7
+accel: 0.08
+drag: 0.016
+mineTier: 1
+flying: true
+health: 200
+armor: 2
+engineOffset: 5.5
+range: 100
+hitSize: 14
+weapons: [
+{
+  name: missile-launcher
+  y: 1
+  reload: 60
+  inaccuracy: 3
+  rotate: false
+  alternate: true
+  shootSound: missile
+  bullet: {
+      type: MissileBulletType
+      hitEffect: blastExplosion
+      despawnEffect: blastExplosion
+      speed: 2
+      damage: 0
+      splashDamage: 20
+      splashDamageRadius: 24
+      homingPower: 0.05
+      homingRange: 32
+      statusDuration: 240
+      status: burning
+      fragBullets: 4
+      fragBullet: fireball
+      shrinkY: 0
+      width: 6
+      height: 6
+      weaveScale: 0
+      weaveMag: -1
+  }
+}
+]
+
+research: {
+    parent: t1-fireburster
+    requirements:
+    [
+        {item: copper, amount: 4000},
+        {item: silicon, amount: 2000},
+        {item: graphite, amount: 800}
+    ]
+}

@@ -1,0 +1,84 @@
+type: flying
+name: Carnage
+description: Fires a massive barrage of rockets.
+speed: 2
+drag: 20
+flying: true
+engineOffset: 20
+engineSize: 10
+commandLimit: 10
+buildSpeed: 4
+mineSpeed: 10
+mineTier: 6
+itemCapacity: 150
+lowAltitude: true
+hitSize: 60
+health: 140000
+armor: 176
+weapons: [
+{
+  name: destruction-rockets
+  x: 0
+  y: 0
+  reload: 100
+  shots: 12
+  shotDelay: 2
+  xRand: 4
+  rotate: true
+  alternate: false
+  mirror: true
+  bullet: {
+      type: MissileBulletType
+      sprite: chaos-arranity-missile-adamantite-large
+      frontColor: FFFFFF
+      backColor: FFFFFF
+      trailColor: FFAA5F
+      hitEffect: blastExplosion
+      speed: 5
+      lifetime: 60
+      damage: 0
+      splashDamage: 600
+      splashDamageRadius: 32
+      homingPower: 1
+      homingRange: 64
+      status: burning
+      shrinkY: 0
+      width: 10
+      height: 10
+      weaveScale: 0
+      weaveMag: -1
+   }
+  shootSound: missile
+}
+{
+  name: carnage-rifle
+  x: 15
+  y: -15
+  recoil: 3
+  reload: 30
+  rotate: true
+  alternate: false
+  mirror: true
+  bullet: {
+      type: ArtilleryBulletType
+      speed: 7
+      width: 10
+      height: 10
+      lifetime: 120
+      damage: 400
+   }
+  shootSound: bang
+}
+]
+
+research: {
+    parent: t4-exponential-adamantite-reconstructor
+    requirements:
+    [
+        {item: surge-alloy, amount: 12000},
+        {item: plastanium, amount: 20000},
+        {item: adamantite, amount: 200},
+        {item: thorium, amount: 20000},
+        {item: silicon, amount: 20000}
+    ]
+}

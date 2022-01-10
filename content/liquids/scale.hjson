@@ -1,0 +1,9 @@
+name: Scale
+description: A thick purple sludge, made from combining thorium and oil. Extensively used for adamantite based machines. Can be used as an inefficient coolant.
+details: This strange purple liquid seems to emit an aura of darkness. Its unusual properties allow for immense boosting for adamantite based machines.
+temperature: 0.5
+viscosity: 0.9
+heatCapacity: 0.2
+effect: tarred
+color: aa00aa
+

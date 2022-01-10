@@ -1,0 +1,45 @@
+type: flying
+name: Decimation
+description: Fires extremely powerful lancer-like lasers.
+speed: 3
+drag: 20
+flying: true
+engineOffset: 12
+engineSize: 6
+commandLimit: 10
+buildSpeed: 4
+mineSpeed: 10
+mineTier: 5
+itemCapacity: 120
+hitSize: 32
+health: 100000
+armor: 140
+weapons: [
+{
+  name: decimator-cannon
+  x: 20
+  y: 10
+  reload: 60
+  rotate: false
+  alternate: true
+  bullet: {
+      type: LaserBulletType
+      lifetime: 10
+      damage: 2000
+      length: 200
+   }
+  shootSound: laser
+}
+]
+
+research: {
+    parent: t3-multiplicative-adamantite-reconstructor
+    requirements:
+    [
+        {item: surge-alloy, amount: 9000},
+        {item: plastanium, amount: 18000},
+        {item: adamantite, amount: 150},
+        {item: thorium, amount: 18000},
+        {item: silicon, amount: 18000}
+    ]
+}
