@@ -1,5 +1,4 @@
 // Content
-require("content/crafting");
 require("content/defense");
 require("content/effect");
 require("content/distribution");
