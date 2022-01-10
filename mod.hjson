@@ -1,5 +1,11 @@
 name: "chaos-arranity"
-displayName: "[#c30d40]Chaos[#880088] Arranity"
+displayName: "[#c30d40]Chaos[#880088] Arranity V7"
 author: "[#cc6d00]Chickenloser[white], [#333333]Oreo[white], [#e7d6c2]Duvent and M.Q."
+description:
+'''
+A mod that adds a few items and liquids, and a whole new tier of upgrades, along with arc. Made by Chickenloser and Oreo with help from Duvent.
+
+Adds 95 new blocks, 5 items, 2 liquids, and 31 units, with plans to add even more.
+'''
 version:"4.8 Fixed"
 minGameVersion: "135"
