@@ -1,4 +1,4 @@
-const CAitems = require("content/items");
+const CAitems = require("content2/items");
 
 const graphiteFactory = extend(GenericCrafter, "graphite-factory", {
     localizedName: "Graphite Factory",
