@@ -1,4 +1,4 @@
-const CAitems = require("content/items");
+const CAitems = require("content2/items");
 
 // Ice Blocks
 // Config
