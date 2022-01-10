@@ -1,6 +1,5 @@
 name: "chaos-arranity"
 displayName: "[#c30d40]Chaos[#880088] Arranity"
 author: "[#cc6d00]Chickenloser[white], [#333333]Oreo[white], and [#e7d6c2]Duvent"
-description: "Making a mod for the first time. Join our Discord! [orange]discord.gg/6y6HAqTrkJ"
-version:"4.6 Beta"
-minGameVersion: "124"
+version:"4.8 Fixed"
+minGameVersion: "135"
