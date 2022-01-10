@@ -3,9 +3,6 @@ require("launchpadadamantite");
 require("hyperwall");
 require("ejectors");
 require("odium-mine");
-
-
-
 require("content2/blocks/crafting");
 require("content2/blocks/defense");
 require("content2/blocks/effect");
