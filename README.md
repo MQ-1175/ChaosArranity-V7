@@ -17,6 +17,4 @@ Special Thanks to Skared Kat/LostCause
 Titanium and Thorium Ejectors use younggam's MultiLib
 
 # Extras
-Join our Discord to report bugs, be notified of updates, or make suggestions.
-
-discord.gg/6y6HAqTrkJ
+Original mod (go star them): https://github.com/AnOreo1/ChaosArranity
