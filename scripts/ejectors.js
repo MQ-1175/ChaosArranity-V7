@@ -114,3 +114,26 @@ const alloyRefinery = multiLib.MultiCrafter(GenericSmelter, GenericSmelter.Smelt
     craftTime:300,
   },
 ]);
+
+alloyRefinery.localizedName = "Alloy Refinery";
+alloyRefinery.description = "Fuses titanium, lead, silicon and copper into surge alloy at maxium effiency. Require coolant to operate. Can be set to cool with water, cryofluid, or cryogenic fluid for varying effiencies.";
+alloyRefinery.liquidCapacity = 200;
+alloyRefinery.itemCapacity = 125;
+alloyRefinery.size = 6;
+alloyRefinery.health = 1980;
+alloyRefinery.updateEffect = Fx.smeltsmoke;
+alloyRefinery.setupRequirements(Category.crafting, ItemStack.with(
+    Items.silicon, 5000,
+    Items.thorium, 3000,
+    Items.plastanium, 1000,
+    Items.copper, 1500,
+    Items.lead, 800,
+    Items.surgeAlloy, 500,
+    Items.phaseFabric, 300
+));
+module.exports = {
+    multititanium:multititanium,
+    multithorium:multithorium,
+    multimixer:multimixer,
+    alloyRefinery:alloyRefinery
+}
