@@ -1,6 +1,6 @@
 type: GenericSmelter
 name: Silicon Refinery
-description: Refines sand using raw power. Requires water as coolant.
+description: Refines sand (and coal) using raw power. Requires water as coolant.
 liquidCapacity: 100
 itemCapacity: 80
 size: 4
@@ -10,12 +10,13 @@ hasLiquids: false
 hasItems: true
 craftTime: 30
 updateEffect: smeltsmoke
-outputItem: silicon/10
+outputItem: silicon/15
 consumes: {
   power: 13.333333333333
   items: {
     items: [
      sand/10
+     coal/15
     ]
   }
   liquid: {
