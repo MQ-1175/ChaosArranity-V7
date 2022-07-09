@@ -13,11 +13,11 @@ consumes: {
   power: 50
 items: {
     items: [
-      metaglass/40
-      plastanium/36
-      surge-alloy/48
-      phase-fabric/60
-      silicon/42
+      metaglass/10
+      plastanium/9
+      surge-alloy/6
+      phase-fabric/8
+      silicon/10
   ]
 }
   liquid: {
